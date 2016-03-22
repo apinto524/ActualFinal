@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "largeSubunit8.png",
+      "filename" : "met.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "largeSubunit8-1.png",
+      "filename" : "met-1.png",
       "scale" : "2x"
     },
     {

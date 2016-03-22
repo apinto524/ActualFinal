@@ -53,6 +53,9 @@ class TranslationVC: UIViewController{
     override func viewDidAppear(animated: Bool) {
         hideEverything()
     }
+    override func viewWillAppear(animated: Bool) {
+        hideEverything()
+    }
 
     override func viewWillDisappear(animated: Bool) {
         
@@ -62,6 +65,7 @@ class TranslationVC: UIViewController{
         
         hideEverything()
     }
+
     func hideEverything(){
         threeprime.hidden = true
         fiveprime.hidden = true
@@ -79,6 +83,8 @@ class TranslationVC: UIViewController{
         amino6.hidden = true
         amino7.hidden = true
         peptide.hidden = true
+
+        
     }
     
     @IBAction func `continue`(sender: UIButton) {
