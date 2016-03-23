@@ -18,21 +18,24 @@ class ribosomeVC: UIViewController{
     @IBOutlet weak var exitLabel: UILabel!
     @IBOutlet weak var pSiteLabel: UILabel!
     @IBOutlet weak var aSiteLabel: UILabel!
-    @IBOutlet weak var largeUnit: UIImageView!
+    @IBOutlet weak var largeUnit: UIButton!
     @IBOutlet weak var smallUnit: UIImageView!
     @IBOutlet weak var leucine: UIImageView!
     @IBOutlet weak var serine: UIImageView!
     @IBOutlet weak var mRNA: UIImageView!
-    var count = 0
+    @IBOutlet weak var firstAminoSegue: UIButton!
+    @IBOutlet weak var tRNASegue: UIButton!
+    @IBOutlet weak var sendToAminoVC: UIButton!
+    var numaddstRNA = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startAnimation()
         setDefaults()
         
     }
     override func viewWillAppear(animated: Bool) {
         setDefaults()
+
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -49,63 +52,136 @@ class ribosomeVC: UIViewController{
     func setDefaults(){
         bond2.hidden = true
         bond3.hidden = true
-        aSiteLabel.hidden = false
-        pSiteLabel.hidden = false
-        exitLabel.hidden = false
+        
         tRNA2.frame.size.width = 29
         tRNA2.frame.size.height = 73
+        
         tRNA3.frame.size.width = 29
         tRNA3.frame.size.height = 73
+        
         serine.frame.size.width = 15
-        serine.frame.size.height = 73
+        serine.frame.size.height = 16
+        
         leucine.frame.size.width = 15
-        leucine.frame.size.height = 73
+        leucine.frame.size.height = 16
+        
         tRNA2.frame.origin.y = 28
         tRNA2.frame.origin.x = 288
+        
         tRNA3.frame.origin.y = 28
         tRNA3.frame.origin.x = 328
+        
         serine.frame.origin.x = 296
         serine.frame.origin.y = 20
+        
         leucine.frame.origin.y = 20
         leucine.frame.origin.x = 337
-    }
-    func startAnimation(){
-        moveIntoASite(self.tRNA2, amino: self.leucine, bond: self.bond2)
+        
+        exitLabel.hidden = false
+        
+        pSiteLabel.hidden = false
+        
+        aSiteLabel.hidden = false
+        
+        aSiteLabel.frame.origin.x = 218
+        aSiteLabel.frame.origin.y = 279
+        
+        largeUnit.frame.origin.x = 20
+        smallUnit.frame.origin.x = 20
+        
+        largeUnit.frame.origin.y = 159
+        smallUnit.frame.origin.y = 426
+        
+        tRNA1.frame.origin.y = 161
+        tRNA1.frame.origin.x = 115
+        
+        numaddstRNA = 0
+        
+        tRNASegue.enabled = true
+        
+        sendToAminoVC.enabled = false
+        firstAminoSegue.enabled = true
+        
 
+    }
+    
+
+    @IBAction func selectRibosome(sender: AnyObject) {
+        UIView.animateWithDuration(0.6, delay: 0.33, options: [.CurveEaseInOut], animations: {
+            self.setDefaults()
+            self.exitLabel.hidden = true
+            self.pSiteLabel.hidden = true
+            self.aSiteLabel.hidden = true
+            }, completion: { finished in
+
+                self.moveIntoASite(self.tRNA2, amino: self.serine, bond: self.bond2)
+        })
         
     }
+    
+    
     func moveIntoASite(tRNA: UIImageView, amino: UIImageView, bond: UIImageView){
-        shiftRibosome()
+        UIView.animateWithDuration(0.8, delay: 0.5, options: [], animations: {
+            self.numaddstRNA += 1
+            var tRNAFrame = tRNA.frame
+            tRNAFrame.size.height = 240
+            tRNAFrame.size.width = 85
+            tRNAFrame.origin.y = 159
+            
+            var aminoFrame = amino.frame
+            aminoFrame.size.width = 54
+            aminoFrame.size.height = 49
+            aminoFrame.origin.y = 124
+            
+            
+            if self.numaddstRNA == 1{
+                tRNAFrame.origin.x = 182
+                aminoFrame.origin.x = 207
+            }
+            
+            if self.numaddstRNA == 2{
+                tRNAFrame.origin.x = 265
+                aminoFrame.origin.x = 280
+            
+            }
+          
+            amino.frame = aminoFrame
+            tRNA.frame = tRNAFrame
+ 
+            }, completion: { finished in
+                self.shiftRibosome(bond)
+                
+        })
     }
-    func shiftRibosome(){
-        //self.aSiteLabel.hidden = true
-        self.exitLabel.hidden = true
-        self.pSiteLabel.hidden = true
-        self.count += 1
-        UIView.animateWithDuration(0.5, delay: 0.33, options: [], animations: {
-            if self.count != 1 {
+    func shiftRibosome(bond: UIImageView){
+
+
+        UIView.animateWithDuration(0.5, delay: 0.33, options: [.CurveEaseInOut], animations: {
+                bond.hidden = false
                 var largeUnitFrame = self.largeUnit.frame
                 largeUnitFrame.origin.x += self.tRNA1.frame.width - 10
                 self.largeUnit.frame = largeUnitFrame
-            }
+                
+                var aSiteFrame = self.aSiteLabel.frame
+                aSiteFrame.origin.x = self.largeUnit.frame.origin.x + (self.largeUnit.frame.width - 65)
+                self.aSiteLabel.frame = aSiteFrame
+                
+                
+                var smallUnitFrame = self.smallUnit.frame
+                smallUnitFrame.origin.x = self.largeUnit.frame.origin.x
+                self.smallUnit.frame = smallUnitFrame
+                
+            
 
-            var aSiteFrame = self.aSiteLabel.frame
-     
-           
-            var smallUnitFrame = self.smallUnit.frame
-            smallUnitFrame.origin.x = self.largeUnit.frame.origin.x
-            aSiteFrame.origin.x = self.largeUnit.frame.origin.x + (self.largeUnit.frame.width - 65)
-            
-            
-            self.aSiteLabel.frame = aSiteFrame
-            self.smallUnit.frame = smallUnitFrame
             
             }, completion: { finished in
-                if self.count == 1{
+                if self.numaddstRNA == 1{
                     self.removetRNA(self.tRNA1)
-                }else if self.count == 2{
+                }
+                if self.numaddstRNA == 2{
                     self.removetRNA(self.tRNA2)
                 }
+
         })
     }
     func removetRNA(trna: UIImageView){
@@ -115,10 +191,17 @@ class ribosomeVC: UIViewController{
             tRNAFrame.origin.x = self.view.frame.minX
             tRNAFrame.origin.y -= trna.frame.height
             trna.frame = tRNAFrame
+   
             }, completion: {finished in
-                if self.count == 1{
-                    self.moveIntoASite(self.tRNA3, amino: self.serine, bond: self.bond3)
+                if self.numaddstRNA == 1 {
+                    self.moveIntoASite(self.tRNA3, amino: self.leucine, bond: self.bond3)
+                } else {
+ 
+                    
+                    self.tRNASegue.enabled = true
+                    self.sendToAminoVC.enabled = true
                 }
+
         })
         
     }
