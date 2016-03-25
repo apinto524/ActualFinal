@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "pept.png",
+      "filename" : "peptidebond-1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "pept-1.png",
+      "filename" : "peptidebond-2.png",
       "scale" : "2x"
     },
     {

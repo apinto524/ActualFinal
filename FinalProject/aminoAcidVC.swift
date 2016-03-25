@@ -11,8 +11,6 @@ import UIKit
 
 class aminoAcidVC: UIViewController{
     
-    @IBOutlet weak var aminoAcid: UIView!
-    @IBOutlet weak var listOfAminos: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }

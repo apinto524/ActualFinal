@@ -20,6 +20,7 @@
 		ED089CD21C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED089CD11C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift */; };
 		EDDDC8CB1CA3406D005FA5CE /* aminoAcidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */; };
 		EDDDC8CD1CA3420C005FA5CE /* polypeptideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDC8CC1CA3420C005FA5CE /* polypeptideVC.swift */; };
+		EDDDC8CF1CA34976005FA5CE /* aminoAcidTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDC8CE1CA34976005FA5CE /* aminoAcidTable.swift */; };
 		EDF2D5CE1C9F867A00309B02 /* ribosomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		ED089CD11C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TertiaryQuaternaryStructVC.swift; sourceTree = "<group>"; };
 		EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoAcidVC.swift; sourceTree = "<group>"; };
 		EDDDC8CC1CA3420C005FA5CE /* polypeptideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = polypeptideVC.swift; sourceTree = "<group>"; };
+		EDDDC8CE1CA34976005FA5CE /* aminoAcidTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoAcidTable.swift; sourceTree = "<group>"; };
 		EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ribosomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				ED089CA61C9DCEEF00BE0124 /* LaunchScreen.storyboard */,
 				ED089CA91C9DCEEF00BE0124 /* Info.plist */,
 				EDDDC8CC1CA3420C005FA5CE /* polypeptideVC.swift */,
+				EDDDC8CE1CA34976005FA5CE /* aminoAcidTable.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDDDC8CF1CA34976005FA5CE /* aminoAcidTable.swift in Sources */,
 				ED089CD21C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift in Sources */,
 				EDF2D5CE1C9F867A00309B02 /* ribosomeVC.swift in Sources */,
 				EDDDC8CB1CA3406D005FA5CE /* aminoAcidVC.swift in Sources */,
