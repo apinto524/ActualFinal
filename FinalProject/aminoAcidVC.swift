@@ -9,13 +9,19 @@
 import Foundation
 import UIKit
 
-class aminoAcidVC: UIViewController{
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
 
-    }
+
+class aminoAcidVC: UIViewController{
+//    var name: String!
+//    
+//    @IBOutlet weak var nameLabel: UILabel!
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        nameLabel.text = name
+//        
+//    }
+//    
+//    override func viewWillAppear(animated: Bool) {
+//
+//    }
 }
