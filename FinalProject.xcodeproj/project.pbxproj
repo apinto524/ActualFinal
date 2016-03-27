@@ -21,7 +21,6 @@
 		ED7BF39C1CA60F8800D364FF /* aminoContentStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */; };
 		ED7BF3A01CA6281D00D364FF /* aminoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */; };
 		EDDDC8CB1CA3406D005FA5CE /* aminoAcidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */; };
-		EDDDC8CD1CA3420C005FA5CE /* polypeptideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDC8CC1CA3420C005FA5CE /* polypeptideVC.swift */; };
 		EDF2D5CE1C9F867A00309B02 /* ribosomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +62,6 @@
 		ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoContentStruct.swift; sourceTree = "<group>"; };
 		ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoTableVC.swift; sourceTree = "<group>"; };
 		EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoAcidVC.swift; sourceTree = "<group>"; };
-		EDDDC8CC1CA3420C005FA5CE /* polypeptideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = polypeptideVC.swift; sourceTree = "<group>"; };
 		EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ribosomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +125,6 @@
 				ED089CA41C9DCEEF00BE0124 /* Assets.xcassets */,
 				ED089CA61C9DCEEF00BE0124 /* LaunchScreen.storyboard */,
 				ED089CA91C9DCEEF00BE0124 /* Info.plist */,
-				EDDDC8CC1CA3420C005FA5CE /* polypeptideVC.swift */,
 				ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */,
 				ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */,
 			);
@@ -293,7 +290,6 @@
 				ED089CCE1C9DDAAD00BE0124 /* PrimaryStructureVC.swift in Sources */,
 				ED7BF3A01CA6281D00D364FF /* aminoTableVC.swift in Sources */,
 				ED089CCC1C9DDAA300BE0124 /* TranslationVC.swift in Sources */,
-				EDDDC8CD1CA3420C005FA5CE /* polypeptideVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
