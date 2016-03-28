@@ -28,6 +28,7 @@ class PrimaryStructureVC: UIViewController{
     @IBOutlet weak var peptideBond10: UIImageView!
   
 
+    @IBOutlet weak var informationView: UIView!
     
     
     
@@ -50,6 +51,8 @@ class PrimaryStructureVC: UIViewController{
         self.peptideBond8.transform = CGAffineTransformMakeRotation(10.0 * CGFloat(M_PI) / 180.0)
         self.peptideBond9.transform = CGAffineTransformMakeRotation(-(70.0 * CGFloat(M_PI) / 180.0))
         self.peptideBond10.transform = CGAffineTransformMakeRotation(-(10.0 * CGFloat(M_PI) / 180.0))
+        
+        informationView.hidden = true
  
     }
     
@@ -58,12 +61,19 @@ class PrimaryStructureVC: UIViewController{
         
     }
     
-    @IBAction func sendtoPeptideVC(sender: AnyObject) {
-        performSegueWithIdentifier("phipsiSegue", sender: self)
-    }
+
     
-    @IBAction func handlePan(recognizer:UITapGestureRecognizer) {
-        print("huh")
+    @IBAction func handleTap(recognizer:UITapGestureRecognizer) {
+        UIView.transitionWithView(informationView, duration: 0.4, options: .TransitionFlipFromRight, animations: {
+            self.informationView.hidden = false
+            }, completion: nil)
     }
 
+    @IBAction func clearOutView(recognizer: UISwipeGestureRecognizer){
+        self.informationView.hidden = true
+    }
+    
+    @IBAction func postTransMod(sender: AnyObject) {
+        performSegueWithIdentifier("postTransMod", sender: self)
+    }
 }

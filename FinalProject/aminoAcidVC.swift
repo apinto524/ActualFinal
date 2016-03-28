@@ -12,16 +12,15 @@ import UIKit
 
 
 class aminoAcidVC: UIViewController{
-//    var name: String!
-//    
-//    @IBOutlet weak var nameLabel: UILabel!
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        nameLabel.text = name
-//        
-//    }
-//    
-//    override func viewWillAppear(animated: Bool) {
-//
-//    }
+
+    var aminoInformation: aminoContentStruct!
+    
+    @IBOutlet weak var name: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.name.text = aminoInformation.name
+    }
+    
+    
 }
