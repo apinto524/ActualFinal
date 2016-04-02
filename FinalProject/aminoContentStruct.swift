@@ -17,7 +17,7 @@ struct aminoContentStruct {
     
     var sideChain: UIImage!
     
-    var backGroundColor: UIColor!
+
     var extendedProperties: String
     var property: String
 }

@@ -12,7 +12,7 @@ import UIKit
 
 class aminoTableVC: UITableViewController  {
     
-    let aminoNames: [String] = ["Alanine", "Arginine", "Asparagine", "Aspartic Acid", "Cysteine", "Glutamine", "Glutamic Acid", "Glycine", "Histidine", "Isoleucine", "Leucine", "Lysine", "Methionine",  "Phenylalanine", "Proline", "Serine", "Threonine", "Tryptophan", "Tyrosine", "Valine"]
+
     var placeholderAmino: aminoContentStruct!
     var aminoInformationArray: [aminoContentStruct]!
 
@@ -31,26 +31,26 @@ class aminoTableVC: UITableViewController  {
     
     func buildAminoArray(){
                 aminoInformationArray = [
-                    aminoContentStruct(name: "Alanine", threeLetterAbrv: "Ala", singleLetterAbrv: "A", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Arginine", threeLetterAbrv: "Arg", singleLetterAbrv: "R", sideChain: nil, backGroundColor: UIColor.blueColor(), extendedProperties: "", property: "Basic"),
-                    aminoContentStruct(name: "Asparagine", threeLetterAbrv: "Asn", singleLetterAbrv: "N", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Aspartic Acid", threeLetterAbrv: "Asp", singleLetterAbrv: "D", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Cysteine", threeLetterAbrv: "Cys", singleLetterAbrv: "C", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Glutamine", threeLetterAbrv: "Gln", singleLetterAbrv: "Q", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Glutamic Acid", threeLetterAbrv: "Glu", singleLetterAbrv: "E", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Glycine", threeLetterAbrv: "Gly", singleLetterAbrv: "G", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Histidine", threeLetterAbrv: "His", singleLetterAbrv: "H", sideChain: nil, backGroundColor: UIColor.blueColor(), extendedProperties: "", property: "Basic"),
-                    aminoContentStruct(name: "Isoleucine", threeLetterAbrv: "Ile", singleLetterAbrv: "I", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Leucine", threeLetterAbrv: "Leu", singleLetterAbrv: "L", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Lysine", threeLetterAbrv: "Lys", singleLetterAbrv: "K", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: "Basic"),
-                    aminoContentStruct(name: "Methionine", threeLetterAbrv: "Met", singleLetterAbrv: "M", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Phenylalanine", threeLetterAbrv: "Phe", singleLetterAbrv: "F", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Proline", threeLetterAbrv: "Pro", singleLetterAbrv: "P", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Serine", threeLetterAbrv: "Ser", singleLetterAbrv: "S", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Threonine", threeLetterAbrv: "Thr", singleLetterAbrv: "T", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Tryptophan", threeLetterAbrv: "Trp", singleLetterAbrv: "W", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Tyrosine", threeLetterAbrv: "Tyr", singleLetterAbrv: "Y", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
-                    aminoContentStruct(name: "Valine", threeLetterAbrv: "Val", singleLetterAbrv: "V", sideChain: nil, backGroundColor: nil, extendedProperties: "", property: ""),
+                    aminoContentStruct(name: "Alanine", threeLetterAbrv: "Ala", singleLetterAbrv: "A", sideChain: UIImage(named: "alaninePic"),  extendedProperties: "Alanine is a hydrophobic amino acid and nonpolar.", property: "Hydrophobic"),
+                    aminoContentStruct(name: "Arginine", threeLetterAbrv: "Arg", singleLetterAbrv: "R", sideChain: UIImage(named: "argininePic"),  extendedProperties: "Arginine is a basic amino acid. It is positively charged.", property: "Basic"),
+                    aminoContentStruct(name: "Asparagine", threeLetterAbrv: "Asn", singleLetterAbrv: "N", sideChain: UIImage(named: "asparaginePic"), extendedProperties: "Asparagine is the amide of aspartic acid and polar. It is hydrophillic.", property: "Polar"),
+                    aminoContentStruct(name: "Aspartic Acid", threeLetterAbrv: "Asp", singleLetterAbrv: "D", sideChain: UIImage(named: "asparticAcidPic"), extendedProperties: "Aspartic Acid is an acidic amino acid. It is negatively charged.", property: "Acidic"),
+                    aminoContentStruct(name: "Cysteine", threeLetterAbrv: "Cys", singleLetterAbrv: "C", sideChain: UIImage(named: "cysteinePic"),  extendedProperties: "Cysteine is a sulfur containing amino acid. Cysteine can react with itself to form an oxidized dimer by formation of a disulfide bond resulting in cystine.", property: "Special"),
+                    aminoContentStruct(name: "Glutamic Acid", threeLetterAbrv: "Glu", singleLetterAbrv: "E", sideChain: UIImage(named: "glutamicAcidPic"), extendedProperties: "Glutamic acid is an acidic amino acid. It has a negative charge.", property: "Acidic"),
+                    aminoContentStruct(name: "Glutamine", threeLetterAbrv: "Gln", singleLetterAbrv: "Q", sideChain: UIImage(named: "glutaminePic"), extendedProperties: "Glutamine is the amide of glutamicAcid and is polar. it is hydrophillic", property: "Polar"),
+                    aminoContentStruct(name: "Glycine", threeLetterAbrv: "Gly", singleLetterAbrv: "G", sideChain: UIImage(named: "glycinePic"),  extendedProperties: "Glysine is the smallest amino acid with only a hydrogen for its side chain. It is hydrophobic and nonpolar.", property: "Special"),
+                    aminoContentStruct(name: "Histidine", threeLetterAbrv: "His", singleLetterAbrv: "H", sideChain: UIImage(named: "histidinePic"), extendedProperties: "Histidine is a basic amino acid. It is positively charged.", property: "Basic"),
+                    aminoContentStruct(name: "Isoleucine", threeLetterAbrv: "Ile", singleLetterAbrv: "I", sideChain: UIImage(named: "isoleucinePic"), extendedProperties: "Isoleucine is hydrophobic and nonpolar.", property: "Hydrophobic"),
+                    aminoContentStruct(name: "Leucine", threeLetterAbrv: "Leu", singleLetterAbrv: "L", sideChain: UIImage(named: "leucinePic"),  extendedProperties: "Leucine is hydrophobic and nonpolar.", property: "Hydrophobic"),
+                    aminoContentStruct(name: "Lysine", threeLetterAbrv: "Lys", singleLetterAbrv: "K", sideChain: UIImage(named: "lysinePic"),  extendedProperties: "Lysine is a basic amino acid. It is positively charged.", property: "Basic"),
+                    aminoContentStruct(name: "Methionine", threeLetterAbrv: "Met", singleLetterAbrv: "M", sideChain: UIImage(named: "methioinePic"),  extendedProperties: "Methionine is a hydrophobic, sulfur containing amino acid. It is nonpolar.", property: "Special"),
+                    aminoContentStruct(name: "Phenylalanine", threeLetterAbrv: "Phe", singleLetterAbrv: "F", sideChain: UIImage(named: "phenylalaninePic"), extendedProperties: "Phenylalanine is an aromatic amino acid. It is hydrophobic and nonpolar.", property: "Aromatic"),
+                    aminoContentStruct(name: "Proline", threeLetterAbrv: "Pro", singleLetterAbrv: "P", sideChain: UIImage(named: "prolinePic"),  extendedProperties: "Proline's side chain attaches itself to the main chain's amide goup. Proline is nonpolar and cyclic.", property: "Special"),
+                    aminoContentStruct(name: "Serine", threeLetterAbrv: "Ser", singleLetterAbrv: "S", sideChain: UIImage(named: "serinePic"),  extendedProperties: "Serine is a polar amino acid and hydrophillic.", property: "Polar"),
+                    aminoContentStruct(name: "Threonine", threeLetterAbrv: "Thr", singleLetterAbrv: "T", sideChain: UIImage(named: "threoninePic"),  extendedProperties: "Threonine is a polar amino acid, hydrophillic. ", property: "Polar"),
+                    aminoContentStruct(name: "Tryptophan", threeLetterAbrv: "Trp", singleLetterAbrv: "W", sideChain: UIImage(named: "tryptophanPic"), extendedProperties: "Tryptophan is an aromatic amino acid. It is nonpolar and hydrophobic.", property: "Aromatic"),
+                    aminoContentStruct(name: "Tyrosine", threeLetterAbrv: "Tyr", singleLetterAbrv: "Y", sideChain: UIImage(named: "tyrosinePic"),  extendedProperties: "Tyrosine is aromatic, hydrophobic and nonpolar.", property: "Aromatic"),
+                    aminoContentStruct(name: "Valine", threeLetterAbrv: "Val", singleLetterAbrv: "V", sideChain: UIImage(named: "valinePic"),  extendedProperties: "Valine is hydrophobic and polar.", property: "Polar")
                 ]
     }
     
@@ -58,6 +58,7 @@ class aminoTableVC: UITableViewController  {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell")!
         cell.textLabel?.text = self.aminoInformationArray[indexPath.row].name
         cell.detailTextLabel?.text = self.aminoInformationArray[indexPath.row].property
+
         return cell
         
     }
@@ -79,7 +80,7 @@ class aminoTableVC: UITableViewController  {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return self.aminoInformationArray.count
     }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
