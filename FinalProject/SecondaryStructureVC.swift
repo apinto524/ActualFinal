@@ -8,7 +8,18 @@
 
 import Foundation
 import UIKit
+import SceneKit
 
 class SecondaryStructureVC: UIViewController{
     
+
+    @IBOutlet weak var alphahelix: SCNView!
+
+    override func viewDidLoad() {
+        alphahelix.scene = alphaHelixScene()
+        alphahelix.backgroundColor = UIColor.blackColor()
+        alphahelix.autoenablesDefaultLighting = true
+
+        alphahelix.allowsCameraControl = true
+    }
 }

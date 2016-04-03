@@ -21,6 +21,7 @@
 		ED2686451CAB1F2A00AE0B90 /* posttranslationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2686441CAB1F2A00AE0B90 /* posttranslationVC.swift */; };
 		ED7BF39C1CA60F8800D364FF /* aminoContentStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */; };
 		ED7BF3A01CA6281D00D364FF /* aminoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */; };
+		EDC038C31CB085ED007C01FA /* alphaHelixScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC038C21CB085ED007C01FA /* alphaHelixScene.swift */; };
 		EDDDC8CB1CA3406D005FA5CE /* aminoAcidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */; };
 		EDF2D5CE1C9F867A00309B02 /* ribosomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		ED2686441CAB1F2A00AE0B90 /* posttranslationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = posttranslationVC.swift; sourceTree = "<group>"; };
 		ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoContentStruct.swift; sourceTree = "<group>"; };
 		ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoTableVC.swift; sourceTree = "<group>"; };
+		EDC038C21CB085ED007C01FA /* alphaHelixScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alphaHelixScene.swift; sourceTree = "<group>"; };
 		EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoAcidVC.swift; sourceTree = "<group>"; };
 		EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ribosomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */,
 				ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */,
 				ED2686441CAB1F2A00AE0B90 /* posttranslationVC.swift */,
+				EDC038C21CB085ED007C01FA /* alphaHelixScene.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				ED089CD01C9DDABD00BE0124 /* SecondaryStructureVC.swift in Sources */,
 				ED089CCE1C9DDAAD00BE0124 /* PrimaryStructureVC.swift in Sources */,
 				ED7BF3A01CA6281D00D364FF /* aminoTableVC.swift in Sources */,
+				EDC038C31CB085ED007C01FA /* alphaHelixScene.swift in Sources */,
 				ED089CCC1C9DDAA300BE0124 /* TranslationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
