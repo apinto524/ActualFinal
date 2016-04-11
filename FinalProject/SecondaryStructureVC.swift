@@ -13,13 +13,16 @@ import SceneKit
 class SecondaryStructureVC: UIViewController{
     
 
+    @IBOutlet weak var betaSheet: SCNView!
     @IBOutlet weak var alphahelix: SCNView!
 
     override func viewDidLoad() {
+        //set alpha helix scene to view
         alphahelix.scene = alphaHelixScene()
         alphahelix.backgroundColor = UIColor.blackColor()
         alphahelix.autoenablesDefaultLighting = true
 
         alphahelix.allowsCameraControl = true
+        self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
     }
 }

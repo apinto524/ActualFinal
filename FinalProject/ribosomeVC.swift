@@ -31,6 +31,7 @@ class ribosomeVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         setDefaults()
+        self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
         
     }
     override func viewWillAppear(animated: Bool) {
@@ -107,6 +108,7 @@ class ribosomeVC: UIViewController{
     
 
     @IBAction func selectRibosome(sender: AnyObject) {
+        //when ribosome is selected animation starts and labels are hidden
         UIView.animateWithDuration(0.6, delay: 0.33, options: [.CurveEaseInOut], animations: {
             self.setDefaults()
             self.exitLabel.hidden = true
@@ -121,24 +123,28 @@ class ribosomeVC: UIViewController{
     
     
     func moveIntoASite(tRNA: UIImageView, amino: UIImageView, bond: UIImageView){
+    
         UIView.animateWithDuration(0.8, delay: 0.5, options: [], animations: {
+            //keep track of added tRNA
             self.numaddstRNA += 1
+            //expand tRNAframe
             var tRNAFrame = tRNA.frame
             tRNAFrame.size.height = 240
             tRNAFrame.size.width = 85
             tRNAFrame.origin.y = 159
             
+            //expand amino fram
             var aminoFrame = amino.frame
             aminoFrame.size.width = 54
             aminoFrame.size.height = 49
             aminoFrame.origin.y = 124
             
-            
+            //if first tRNA added, send to further left location
             if self.numaddstRNA == 1{
                 tRNAFrame.origin.x = 182
                 aminoFrame.origin.x = 207
             }
-            
+            //if second tRNA being added send to last position
             if self.numaddstRNA == 2{
                 tRNAFrame.origin.x = 265
                 aminoFrame.origin.x = 280
@@ -154,14 +160,17 @@ class ribosomeVC: UIViewController{
         })
     }
     func shiftRibosome(bond: UIImageView){
-
+        //move the ribosome
 
         UIView.animateWithDuration(0.5, delay: 0.33, options: [.CurveEaseInOut], animations: {
+            //show bond
                 bond.hidden = false
+            //shift frame of ribosome
                 var largeUnitFrame = self.largeUnit.frame
                 largeUnitFrame.origin.x += self.tRNA1.frame.width - 10
                 self.largeUnit.frame = largeUnitFrame
-                
+            
+            //use a site  label as a frame of reference for location of A site
                 var aSiteFrame = self.aSiteLabel.frame
                 aSiteFrame.origin.x = self.largeUnit.frame.origin.x + (self.largeUnit.frame.width - 65)
                 self.aSiteLabel.frame = aSiteFrame
@@ -186,6 +195,7 @@ class ribosomeVC: UIViewController{
     }
     func removetRNA(trna: UIImageView){
         UIView.animateWithDuration(0.4, delay: 0.2, options: [.CurveEaseIn], animations: {
+            //remove tRNA
             var tRNAFrame = trna.frame
             tRNAFrame.origin.y = self.view.frame.minY
             tRNAFrame.origin.x = self.view.frame.minX
@@ -194,9 +204,10 @@ class ribosomeVC: UIViewController{
    
             }, completion: {finished in
                 if self.numaddstRNA == 1 {
+                    //start over
                     self.moveIntoASite(self.tRNA3, amino: self.leucine, bond: self.bond3)
                 } else {
- 
+                    //enable button to next view
                     
                     self.tRNASegue.enabled = true
                     self.sendToAminoVC.enabled = true

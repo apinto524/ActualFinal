@@ -19,6 +19,7 @@ class aminoTableVC: UITableViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         buildAminoArray()
+        self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
         
     }
 
@@ -55,10 +56,11 @@ class aminoTableVC: UITableViewController  {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        //set each cell of the table
         let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell")!
         cell.textLabel?.text = self.aminoInformationArray[indexPath.row].name
         cell.detailTextLabel?.text = self.aminoInformationArray[indexPath.row].property
-
+        cell.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
         return cell
         
     }
@@ -69,10 +71,10 @@ class aminoTableVC: UITableViewController  {
         // Get the first node
         
         
-        // Get a StoryNodeController from the Storyboard
+        // Get a aminoAcidVC from the Storyboard
         let storyNodeController = self.storyboard!.instantiateViewControllerWithIdentifier("aminoAcidVC")as! aminoAcidVC
         
-        // Set the story node so that we will see the start of the story
+        // send all amino acid information for selected amino acid to next view
         storyNodeController.aminoInformation = selectedAmino
         
         // Push the new controller onto the stack
@@ -82,9 +84,7 @@ class aminoTableVC: UITableViewController  {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.aminoInformationArray.count
     }
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
+
 
 }
 

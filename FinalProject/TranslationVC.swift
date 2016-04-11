@@ -43,6 +43,7 @@ class TranslationVC: UIViewController{
         super.viewDidLoad()
          hideEverything()
         peptideSize = self.peptide.frame.size
+         self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
         
   
     }
@@ -116,6 +117,7 @@ class TranslationVC: UIViewController{
         threeprime.hidden = false
         smallSub.hidden = false
         UIView.animateWithDuration(0.8, animations: {
+            //attach small subunit
             var smallFrame = self.smallSub.frame
             smallFrame.origin.y = self.mRNA.frame.minY
             smallFrame.origin.y += (smallFrame.size.height/2)
@@ -131,6 +133,7 @@ class TranslationVC: UIViewController{
         })
     }
     func attachAA() -> UIImageView!{
+        //create an easily accessible track of how many amino acids are create and should be shown
         self.countAA = self.countAA + 1
         print("\(countAA) amino")
         var aa = UIImageView!()
@@ -160,17 +163,22 @@ class TranslationVC: UIViewController{
         amino.frame.origin.y = tRNA1.frame.origin.y
         amino.frame.origin.y -= amino.frame.height / 2
         self.firstAminoPoint = amino.frame.origin
+        //show amino acid
         amino.hidden = false
+    
         tRNA1.hidden = false
         UIView.animateWithDuration(0.7, animations: {
+            
             var tRNAFrame = self.tRNA1.frame
             var aminoFrame = amino.frame
 
-            
+            //set first tRNA
             
             tRNAFrame.origin.x = self.smallSub.frame.midX
             tRNAFrame.origin.y = self.mRNA.frame.origin.y
             tRNAFrame.origin.y -= (tRNAFrame.size.height/2)
+            
+            //set location of amino acid
             aminoFrame.origin.x = tRNAFrame.origin.x
             aminoFrame.origin.y = tRNAFrame.minY
             aminoFrame.origin.y -= amino.frame.height / 2
@@ -191,6 +199,7 @@ class TranslationVC: UIViewController{
         largeSub.hidden = false
         UIView.animateWithDuration(0.7, animations: {
             var largeSubFrame = self.largeSub.frame
+            //set location of large subunit
             largeSubFrame.origin.x = self.smallSub.frame.origin.x
             largeSubFrame.origin.y = self.smallSub.frame.origin.y
             largeSubFrame.origin.y -= self.largeSub.frame.height
@@ -205,6 +214,7 @@ class TranslationVC: UIViewController{
         
     }
     func addtRNA(tRNA: UIImageView){
+        //create peptide bond
         self.peptide.hidden = false
         
         let amino = attachAA()
@@ -217,6 +227,7 @@ class TranslationVC: UIViewController{
         UIView.animateWithDuration(0.7, delay: 0, options: .CurveEaseInOut, animations: {
             var tRNAFrame = tRNA.frame
             var aminoFrame = amino.frame
+            //add second tRNA
             tRNAFrame.origin.x = self.smallSub.frame.minX
             tRNAFrame.origin.y = self.mRNA.frame.origin.y
             tRNAFrame.origin.y -= (tRNAFrame.size.height/2)
@@ -224,6 +235,7 @@ class TranslationVC: UIViewController{
             aminoFrame.origin.y = tRNAFrame.minY
             aminoFrame.origin.y -= amino.frame.height / 2
             
+            //connect amino acids
             var pepSize = self.peptide.frame.size
             pepSize.width = self.peptide.frame.size.width + self.peptideSize.width
             var pepFrame = self.peptide.frame
@@ -250,6 +262,7 @@ class TranslationVC: UIViewController{
     }
     func detach(tRNA: UIImageView){
         UIView.animateWithDuration(0.7, delay: 0, options: .CurveEaseInOut, animations: {
+            //detach trna
             var tRNAFrame = tRNA.frame
             tRNAFrame.origin.x = self.view.frame.minX
             tRNAFrame.origin.y = self.view.frame.origin.y
@@ -268,6 +281,7 @@ class TranslationVC: UIViewController{
     }
     func moveOver(){
         UIView.animateWithDuration(0.6, animations: {
+            //shift both units of ribosome
             var moveOver1 = self.smallSub.frame
             var moveOver2 = self.largeSub.frame
             moveOver1.origin.x -= (moveOver1.width / 2)
@@ -276,6 +290,7 @@ class TranslationVC: UIViewController{
             self.smallSub.frame = moveOver1
             self.largeSub.frame = moveOver2
             }, completion: {finished in
+                
                 if self.countAA < 7{
                     if self.countAA % 2 == 1{
                         self.addtRNA(self.tRNA2)
@@ -283,7 +298,7 @@ class TranslationVC: UIViewController{
                         self.addtRNA(self.tRNA1)
                     }
                 } else{
-                    
+                    //end of translation
                     self.disintegrate()
                 }
         

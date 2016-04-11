@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L06-3g-DDD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L06-3g-DDD">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -15,8 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="hbD-ME-hC6" colorLabel="IBBuiltInLabel-Blue">
+                            <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="hbD-ME-hC6" colorLabel="IBBuiltInLabel-Blue">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hbD-ME-hC6" id="0G7-Z5-3fO">
@@ -161,23 +162,6 @@
                                     <action selector="viewAnimation:" destination="YfS-x1-mga" eventType="touchUpInside" id="y82-lD-MUM"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oKO-tf-IdF">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
-                                <string key="text">Translation is the starting process for protein formation. It is divided into three steps: initiation, elongation and termination. The process begins with the small subunit of the ribosome coming in and attaching to 5' end of mRNA. Once the small subunit is bound, a tRNA will bind to the initator codon AUG. Now the large subunit of the ribosome binds to the small subunit and forms what we know as the initiation complex.This is the initiation step. Next is the elongation step. During this step, the ribosome moves from the 5' end to the 3' end as tRNA's continually enter the large subunit and a peptide chain begins to form. When the ribosome reaches a stop codon, such as UGA UAG and UAA , the termination step occurs. At this point, the mRNA and large and small subunits dissociate and translation is complete.</string>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="284" width="360" height="265"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="362" width="360" height="265"/>
-                                </variation>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR4-qd-fPD">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Continue"/>
@@ -206,6 +190,22 @@
                                     <rect key="frame" x="77" y="292" width="240" height="128"/>
                                 </variation>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oKO-tf-IdF">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <string key="text">Translation is the starting process for protein formation. It is divided into three steps: initiation, elongation and termination. The process begins with the small subunit of the ribosome coming in and attaching to 5' end of mRNA. Once the small subunit is bound, a tRNA will bind to the initator codon AUG. Now the large subunit of the ribosome binds to the small subunit and forms what we know as the initiation complex.This is the initiation step. Next is the elongation step. During this step, the ribosome moves from the 5' end to the 3' end as tRNA's continually enter the large subunit and a peptide chain begins to form. When the ribosome reaches a stop codon, such as UGA UAG and UAA , the termination step occurs. At this point, the mRNA and large and small subunits dissociate and translation is complete.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="284" width="360" height="265"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="362" width="360" height="265"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -232,10 +232,10 @@
                                 <exclude reference="Kj6-a9-ktD"/>
                                 <exclude reference="ldc-wI-nVT"/>
                                 <exclude reference="Xn6-2e-lMe"/>
-                                <exclude reference="oKO-tf-IdF"/>
                                 <exclude reference="LR4-qd-fPD"/>
                                 <exclude reference="Pwd-xh-0rp"/>
                                 <exclude reference="bfO-Qy-XL4"/>
+                                <exclude reference="oKO-tf-IdF"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="E0Q-QY-ai9"/>
@@ -261,10 +261,10 @@
                                 <include reference="Kj6-a9-ktD"/>
                                 <include reference="ldc-wI-nVT"/>
                                 <include reference="Xn6-2e-lMe"/>
-                                <include reference="oKO-tf-IdF"/>
                                 <include reference="LR4-qd-fPD"/>
                                 <include reference="Pwd-xh-0rp"/>
                                 <include reference="bfO-Qy-XL4"/>
+                                <include reference="oKO-tf-IdF"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="E0Q-QY-ai9"/>
@@ -439,7 +439,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJW-6X-KAg">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="primary"/>
+                                <state key="normal" image="primary" backgroundImage="background">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="116" y="83" width="51" height="50"/>
                                 </variation>
@@ -1011,6 +1013,39 @@
             </objects>
             <point key="canvasLocation" x="1345.5" y="49.5"/>
         </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="n55-We-O1f">
+            <objects>
+                <collectionViewController id="JOf-bi-WHg" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Pn9-69-jg0">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ktc-dQ-iHm">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YO4-0Z-uEx">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="JOf-bi-WHg" id="Hdp-H9-TVe"/>
+                            <outlet property="delegate" destination="JOf-bi-WHg" id="iDU-Be-FI0"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgD-gU-nml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2097" y="1095.75"/>
+        </scene>
         <!--Tertiary and Quaternary-->
         <scene sceneID="cec-jJ-a40">
             <objects>
@@ -1071,9 +1106,41 @@
                             </button>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="alphahelix" sceneName="alphahelix" allowsCameraControl="YES" autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Sx-Me-LDh">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="62" y="99" width="129" height="198"/>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="u7c-bg-cGK" appends="YES" id="uME-uv-Unc"/>
+                                </connections>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-Pd-Vdl">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="275" y="187" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEc-5Z-rBN">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="105" y="502" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9N-qc-rN0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="232" y="414" width="129" height="198"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7ym-hQ-0FD" appends="YES" id="EJU-TJ-sHS"/>
+                                </connections>
                             </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1085,6 +1152,9 @@
                             <mask key="subviews">
                                 <exclude reference="FDM-zb-hiH"/>
                                 <exclude reference="0Sx-Me-LDh"/>
+                                <exclude reference="bZP-Pd-Vdl"/>
+                                <exclude reference="EEc-5Z-rBN"/>
+                                <exclude reference="V9N-qc-rN0"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="CJ2-hT-LhN"/>
@@ -1103,16 +1173,25 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="0Sx-Me-LDh"/>
+                                <include reference="bZP-Pd-Vdl"/>
+                                <include reference="EEc-5Z-rBN"/>
+                                <include reference="V9N-qc-rN0"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="alphahelix" destination="0Sx-Me-LDh" id="W2f-5q-b8n"/>
-                        <segue destination="SfH-x8-8Tp" kind="show" id="Ctk-vd-929"/>
+                        <outlet property="betaSheet" destination="V9N-qc-rN0" id="VqM-LR-lX2"/>
                         <segue destination="RRZ-hJ-xNR" kind="showDetail" id="r5h-QG-vsd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zXe-52-tty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="u7c-bg-cGK">
+                    <connections>
+                        <segue destination="SfH-x8-8Tp" kind="show" id="sof-Tn-o49"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7ym-hQ-0FD"/>
             </objects>
             <point key="canvasLocation" x="-789" y="546"/>
         </scene>
@@ -1124,7 +1203,7 @@
                         <viewControllerLayoutGuide type="top" id="0IZ-Q1-MHb"/>
                         <viewControllerLayoutGuide type="bottom" id="dxb-tr-da4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bcX-qO-dpa">
+                    <view key="view" contentMode="scaleToFill" id="bcX-qO-dpa" customClass="SCNView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1529,7 +1608,6 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3S3-hy-Pe8">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2024,7 +2102,8 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="YvS-JR-sEl"/>
@@ -2135,15 +2214,15 @@
             </objects>
             <point key="canvasLocation" x="426" y="-549"/>
         </scene>
-        <!--Alpha helices-->
+        <!--alphaHelixVC-->
         <scene sceneID="rVW-tb-TWX">
             <objects>
-                <viewController title="Alpha helices" id="SfH-x8-8Tp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="alphaHelixVC" title="alphaHelixVC" id="SfH-x8-8Tp" customClass="alphHelixVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="apd-GR-KWA"/>
                         <viewControllerLayoutGuide type="bottom" id="67M-08-1Va"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2cQ-6F-z7F">
+                    <view key="view" contentMode="scaleToFill" id="2cQ-6F-z7F" customClass="SCNView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2287,6 +2366,7 @@
         <image name="Met" width="592" height="601"/>
         <image name="amino" width="7" height="7"/>
         <image name="arrow" width="785" height="313"/>
+        <image name="background" width="600" height="375"/>
         <image name="circle" width="30" height="31"/>
         <image name="large" width="59" height="40"/>
         <image name="leucine" width="592" height="601"/>
@@ -2311,7 +2391,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="ucV-br-wIf"/>
         <segue reference="qlc-X1-jNz"/>
-        <segue reference="wBA-uw-QUH"/>
+        <segue reference="gwR-qi-uF8"/>
         <segue reference="gd2-g1-geQ"/>
         <segue reference="gDU-o2-OYP"/>
         <segue reference="nwk-oz-9cq"/>

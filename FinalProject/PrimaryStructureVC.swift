@@ -34,6 +34,7 @@ class PrimaryStructureVC: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //set location of each peptide bond
         self.peptidebond1.transform = CGAffineTransformMakeRotation(-(35.0 * CGFloat(M_PI)) / 180.0)
         
         self.peptideBond2.transform = CGAffineTransformMakeRotation((10.0 * CGFloat(M_PI)) / 180.0)
@@ -53,6 +54,7 @@ class PrimaryStructureVC: UIViewController{
         self.peptideBond10.transform = CGAffineTransformMakeRotation(-(10.0 * CGFloat(M_PI) / 180.0))
         
         informationView.hidden = true
+        self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
  
     }
     
@@ -64,6 +66,7 @@ class PrimaryStructureVC: UIViewController{
 
     
     @IBAction func handleTap(recognizer:UITapGestureRecognizer) {
+        //show n terminal view
         UIView.transitionWithView(informationView, duration: 0.4, options: .TransitionFlipFromRight, animations: {
             self.informationView.hidden = false
             }, completion: nil)

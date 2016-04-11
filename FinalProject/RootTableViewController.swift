@@ -13,7 +13,8 @@ class RootTableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        //set background
+        self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,16 +23,20 @@ class RootTableViewController: UITableViewController{
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //set number of cells for table
         return steps.count
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        //set contents of cell
          let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell")!
         cell.textLabel!.text = steps[indexPath.row]
+        cell.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
         return cell
         
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //send to appropriate view controller when user selects
         if indexPath.row == 0{
             let stepNodeController = self.storyboard!.instantiateViewControllerWithIdentifier("TranslationVC")as! TranslationVC
             self.navigationController!.pushViewController(stepNodeController, animated: true)

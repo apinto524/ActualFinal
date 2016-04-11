@@ -23,7 +23,8 @@ class aminoAcidVC: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
+        //show information
         self.name.text = aminoInformation.name
         self.threeLetters.text = aminoInformation.threeLetterAbrv
         self.singleLetter.text = aminoInformation.singleLetterAbrv
