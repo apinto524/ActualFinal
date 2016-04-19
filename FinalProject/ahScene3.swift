@@ -1,16 +1,16 @@
 //
-//  alphaHelixScene.swift
+//  ahScene3.swift
 //  FinalProject
 //
-//  Created by Alexandria Pinto on 4/2/16.
+//  Created by Alexandria Pinto on 4/19/16.
 //  Copyright © 2016 Alexandria Pinto. All rights reserved.
 //
 
-
+import Foundation
 import SceneKit
 import UIKit
 
-class alphaHelixScene: SCNScene{
+class ahScene3: SCNScene{
     var count = 0
     override init(){
         super.init()
@@ -22,23 +22,20 @@ class alphaHelixScene: SCNScene{
     
     func createScene(){
         count += 1
-        
-        let sphereGeom = SCNSphere(radius: 150)
-        
-        sphereGeom.firstMaterial?.diffuse.contents = UIColor.redColor()
-        let nTermlabel = SCNText(string: "N Terminal", extrusionDepth: 20)
+        let nTermlabel = SCNText(string: "N terminal", extrusionDepth: 20)
         nTermlabel.font = UIFont(name: "Helvetica", size: 70)
         let nTermNode = SCNNode(geometry: nTermlabel)
         nTermNode.position = SCNVector3(x: 450, y: 600, z: 0)
         self.rootNode.addChildNode(nTermNode)
 
-        
         let cTermlabel = SCNText(string: "C Terminal", extrusionDepth: 20)
         cTermlabel.font = UIFont(name: "Helvetica", size: 70)
         let cTermNode = SCNNode(geometry: cTermlabel)
         cTermNode.position = SCNVector3(x: 450, y: -1890, z: 0)
         self.rootNode.addChildNode(cTermNode)
-
+        
+        let sphereGeom = SCNSphere(radius: 150)
+        sphereGeom.firstMaterial?.diffuse.contents = UIColor.redColor()
         
         let connectionGeom = SCNBox(width: 70, height: 500, length: 70, chamferRadius: 27)
         
@@ -58,7 +55,7 @@ class alphaHelixScene: SCNScene{
             let connectionNode = SCNNode(geometry: connectionGeom)
             
             let angle = Double(radians * M_PI )
-           // print("\(radians)pi theta")
+            // print("\(radians)pi theta")
             
             let xPosition = Float(radius * cos(angle))
             let zPosition = Float(radius * sin(angle))
@@ -69,7 +66,7 @@ class alphaHelixScene: SCNScene{
             let midPointy = Float(yPosition + pointToNTerm.y) / 2.0
             let midPointz = Float(zPosition + pointToNTerm.z) / 2.0
             
-           // print("\(count): (\(xPosition), \(yPosition), \(zPosition))")
+            // print("\(count): (\(xPosition), \(yPosition), \(zPosition))")
             
             //print("Midpoint between previous point: (\(midPointx), \(midPointy), \(midPointz))")
             

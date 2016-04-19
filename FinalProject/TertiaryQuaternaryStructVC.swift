@@ -19,6 +19,9 @@ class TertiaryQuaternaryStructVC: UIViewController{
 
  
 
+    @IBAction func goback(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     //modal display of information about quaternary
     
     //new display for active site from tertiary

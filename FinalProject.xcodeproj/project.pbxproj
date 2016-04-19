@@ -24,6 +24,8 @@
 		ED7BF39C1CA60F8800D364FF /* aminoContentStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */; };
 		ED7BF3A01CA6281D00D364FF /* aminoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */; };
 		ED8833C61CB1C27F00ECF78D /* alphaHelixVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8833C51CB1C27F00ECF78D /* alphaHelixVC.swift */; };
+		EDBB2F541CC6EC9200A21557 /* ahScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F531CC6EC9200A21557 /* ahScene2.swift */; };
+		EDBB2F561CC6ED3200A21557 /* ahScene3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F551CC6ED3200A21557 /* ahScene3.swift */; };
 		EDC038C31CB085ED007C01FA /* alphaHelixScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC038C21CB085ED007C01FA /* alphaHelixScene.swift */; };
 		EDDDC8CB1CA3406D005FA5CE /* aminoAcidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */; };
 		EDF2D5CE1C9F867A00309B02 /* ribosomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */; };
@@ -70,6 +72,8 @@
 		ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoContentStruct.swift; sourceTree = "<group>"; };
 		ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoTableVC.swift; sourceTree = "<group>"; };
 		ED8833C51CB1C27F00ECF78D /* alphaHelixVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alphaHelixVC.swift; sourceTree = "<group>"; };
+		EDBB2F531CC6EC9200A21557 /* ahScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ahScene2.swift; sourceTree = "<group>"; };
+		EDBB2F551CC6ED3200A21557 /* ahScene3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ahScene3.swift; sourceTree = "<group>"; };
 		EDC038C21CB085ED007C01FA /* alphaHelixScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alphaHelixScene.swift; sourceTree = "<group>"; };
 		EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoAcidVC.swift; sourceTree = "<group>"; };
 		EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ribosomeVC.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				ED1A90A81CC2DF1E0049E925 /* betaSheetScene.swift */,
 				ED8833C51CB1C27F00ECF78D /* alphaHelixVC.swift */,
 				ED7A50B81CC405560093D1C9 /* betaSheetVC.swift */,
+				EDBB2F531CC6EC9200A21557 /* ahScene2.swift */,
+				EDBB2F551CC6ED3200A21557 /* ahScene3.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -297,8 +303,10 @@
 			files = (
 				ED8833C61CB1C27F00ECF78D /* alphaHelixVC.swift in Sources */,
 				ED2686451CAB1F2A00AE0B90 /* posttranslationVC.swift in Sources */,
+				EDBB2F541CC6EC9200A21557 /* ahScene2.swift in Sources */,
 				ED1A90A91CC2DF1F0049E925 /* betaSheetScene.swift in Sources */,
 				ED7A50B91CC405560093D1C9 /* betaSheetVC.swift in Sources */,
+				EDBB2F561CC6ED3200A21557 /* ahScene3.swift in Sources */,
 				ED089CD21C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift in Sources */,
 				ED7BF39C1CA60F8800D364FF /* aminoContentStruct.swift in Sources */,
 				EDF2D5CE1C9F867A00309B02 /* ribosomeVC.swift in Sources */,

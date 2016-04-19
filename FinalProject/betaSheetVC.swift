@@ -18,5 +18,19 @@ class betaSheetVC: UIViewController{
         sceneView.backgroundColor = UIColor.blackColor()
         sceneView.autoenablesDefaultLighting = true
         sceneView.allowsCameraControl = true
+        addAlert()
+    }
+    func addAlert(){
+        let controller = UIAlertController()
+        controller.title = "About Beta Sheets"
+        controller.message = "Beta Sheets ......"
+        let gotitAction = UIAlertAction(title: "I got it", style: UIAlertActionStyle.Default, handler: {
+            action in self.dismissViewControllerAnimated(true, completion: nil)
+            
+        })
+        controller.addAction(gotitAction)
+        self.presentViewController(controller, animated: true, completion: nil)
+        
+        
     }
 }
