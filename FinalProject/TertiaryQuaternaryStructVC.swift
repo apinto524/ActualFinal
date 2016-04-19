@@ -10,5 +10,18 @@ import Foundation
 import UIKit
 
 class TertiaryQuaternaryStructVC: UIViewController{
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+         self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
+        
+    }
+
+ 
+
+    //modal display of information about quaternary
+    
+    //new display for active site from tertiary
+    
     
 }

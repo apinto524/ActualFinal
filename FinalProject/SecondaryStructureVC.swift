@@ -24,5 +24,9 @@ class SecondaryStructureVC: UIViewController{
 
         alphahelix.allowsCameraControl = true
         self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
+        
+        betaSheet.scene = betaSheetScene()
+        betaSheet.backgroundColor = UIColor.blackColor()
+        
     }
 }

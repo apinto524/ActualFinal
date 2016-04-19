@@ -35,8 +35,6 @@
                     <connections>
                         <segue destination="NYA-JX-eOp" kind="show" identifier="toPrimary" id="ZWW-cW-bim"/>
                         <segue destination="h34-1I-Zbc" kind="show" identifier="toSecondary" id="Qey-7F-avB"/>
-                        <segue destination="vLe-sJ-CkH" kind="show" identifier="toTerQua" id="gwR-qi-uF8"/>
-                        <segue destination="YfS-x1-mga" kind="show" identifier="toTranslation" id="pBu-IB-XlE"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sr1-ou-83r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -157,14 +155,20 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn6-2e-lMe">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Click to view animation"/>
+                                <state key="normal" title="Click to view animation">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.41827019510000002" green="0.4883031484" blue="0.64299738220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="viewAnimation:" destination="YfS-x1-mga" eventType="touchUpInside" id="y82-lD-MUM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR4-qd-fPD">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Continue"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.41827019510000002" green="0.4883031484" blue="0.64299738220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="continue:" destination="YfS-x1-mga" eventType="touchUpInside" id="9sA-LI-xK9"/>
                                     <segue destination="NYA-JX-eOp" kind="show" id="qlc-X1-jNz"/>
@@ -1013,77 +1017,110 @@
             </objects>
             <point key="canvasLocation" x="1345.5" y="49.5"/>
         </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="n55-We-O1f">
+        <!--Tertiary Quaternary StructVC-->
+        <scene sceneID="bke-SC-QpC">
             <objects>
-                <collectionViewController id="JOf-bi-WHg" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Pn9-69-jg0">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ktc-dQ-iHm">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YO4-0Z-uEx">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="JOf-bi-WHg" id="Hdp-H9-TVe"/>
-                            <outlet property="delegate" destination="JOf-bi-WHg" id="iDU-Be-FI0"/>
-                        </connections>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HgD-gU-nml" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2097" y="1095.75"/>
-        </scene>
-        <!--Tertiary and Quaternary-->
-        <scene sceneID="cec-jJ-a40">
-            <objects>
-                <viewController storyboardIdentifier="TertiaryQuaternaryStructVC" title="Tertiary and Quaternary" id="vLe-sJ-CkH" customClass="TertiaryQuaternaryStructVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TertiaryQuaternaryStructVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rU4-9m-Ncp" customClass="TertiaryQuaternaryStructVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="z6e-Jy-xl5"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fmo-U2-Fx8"/>
+                        <viewControllerLayoutGuide type="top" id="zR1-yX-Y37"/>
+                        <viewControllerLayoutGuide type="bottom" id="bd4-x9-Xtg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7ey-qg-zud">
+                    <view key="view" contentMode="scaleToFill" id="keb-Lr-hEm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnZ-1D-u7V">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="quaternary"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="371" width="206" height="204"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="J67-uP-wVs" kind="presentation" id="Zm5-PD-Jru"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v07-8j-7HQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="tertiary"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="97" y="88" width="206" height="209"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="7Mh-M3-K4g" kind="show" id="Et0-f5-sVy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZnZ-1D-u7V"/>
+                                <exclude reference="v07-8j-7HQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZnZ-1D-u7V"/>
+                                <include reference="v07-8j-7HQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U76-2k-I7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2139" y="1126.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jwh-aJ-lgl">
+            <objects>
+                <viewController id="J67-uP-wVs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rSK-jz-ySN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y0u-ZM-TRi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Rq-H7-usG">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfaceview" translatesAutoresizingMaskIntoConstraints="NO" id="2to-0S-vJk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="76" y="296" width="249" height="208"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2to-0S-vJk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2to-0S-vJk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXx-SO-ubf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1275" y="1494.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wub-Gb-2B0">
+            <objects>
+                <viewController storyboardIdentifier="activeSite" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Mh-M3-K4g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rnn-3w-yrm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mee-em-SI1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AIS-pH-K2n">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <segue destination="Rp3-v9-ThR" kind="show" id="Sfj-S6-XhX"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3q0-Z6-nOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmW-Pn-bO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1723.5" y="1257"/>
-        </scene>
-        <!--Active site-->
-        <scene sceneID="Qm6-Sw-uck">
-            <objects>
-                <viewController title="Active site" id="Rp3-v9-ThR" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RQO-6y-Uhu"/>
-                        <viewControllerLayoutGuide type="bottom" id="FRr-Yr-dWz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZAu-gQ-hcR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bfy-X7-Ien" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-792" y="1493"/>
+            <point key="canvasLocation" x="-747" y="1202.25"/>
         </scene>
         <!--Secondary structure-->
         <scene sceneID="dOS-pA-ek4">
@@ -1101,35 +1138,16 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
-                                    <segue destination="vLe-sJ-CkH" kind="show" id="wBA-uw-QUH"/>
+                                    <segue destination="rU4-9m-Ncp" kind="show" id="jMn-CK-wqR"/>
                                 </connections>
                             </button>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="alphahelix" sceneName="alphahelix" allowsCameraControl="YES" autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Sx-Me-LDh">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <gestureRecognizers/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="62" y="99" width="129" height="198"/>
-                                </variation>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="u7c-bg-cGK" appends="YES" id="uME-uv-Unc"/>
-                                </connections>
-                            </sceneKitView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-Pd-Vdl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha helix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-Pd-Vdl">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="275" y="187" width="42" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEc-5Z-rBN">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="105" y="502" width="42" height="21"/>
+                                    <rect key="frame" x="254" y="187" width="84" height="21"/>
                                 </variation>
                             </label>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9N-qc-rN0">
@@ -1142,6 +1160,25 @@
                                     <outletCollection property="gestureRecognizers" destination="7ym-hQ-0FD" appends="YES" id="EJU-TJ-sHS"/>
                                 </connections>
                             </sceneKitView>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="alphahelix" sceneName="alphahelix" allowsCameraControl="YES" autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Sx-Me-LDh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="99" width="129" height="198"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="u7c-bg-cGK" appends="YES" id="uME-uv-Unc"/>
+                                </connections>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beta Sheet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEc-5Z-rBN">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="84" y="502" width="84" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1151,10 +1188,10 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="FDM-zb-hiH"/>
-                                <exclude reference="0Sx-Me-LDh"/>
                                 <exclude reference="bZP-Pd-Vdl"/>
-                                <exclude reference="EEc-5Z-rBN"/>
                                 <exclude reference="V9N-qc-rN0"/>
+                                <exclude reference="0Sx-Me-LDh"/>
+                                <exclude reference="EEc-5Z-rBN"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="CJ2-hT-LhN"/>
@@ -1172,10 +1209,10 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="0Sx-Me-LDh"/>
                                 <include reference="bZP-Pd-Vdl"/>
-                                <include reference="EEc-5Z-rBN"/>
                                 <include reference="V9N-qc-rN0"/>
+                                <include reference="0Sx-Me-LDh"/>
+                                <include reference="EEc-5Z-rBN"/>
                             </mask>
                         </variation>
                     </view>
@@ -1191,14 +1228,18 @@
                         <segue destination="SfH-x8-8Tp" kind="show" id="sof-Tn-o49"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="7ym-hQ-0FD"/>
+                <tapGestureRecognizer id="7ym-hQ-0FD">
+                    <connections>
+                        <segue destination="RRZ-hJ-xNR" kind="show" id="zzX-dG-Itj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-789" y="546"/>
         </scene>
         <!--Beta Sheets-->
         <scene sceneID="Fhx-gD-GLe">
             <objects>
-                <viewController title="Beta Sheets" id="RRZ-hJ-xNR" sceneMemberID="viewController">
+                <viewController title="Beta Sheets" id="RRZ-hJ-xNR" customClass="betaSheetVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0IZ-Q1-MHb"/>
                         <viewControllerLayoutGuide type="bottom" id="dxb-tr-da4"/>
@@ -1211,7 +1252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMS-I8-fn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="1031"/>
+            <point key="canvasLocation" x="426" y="657"/>
         </scene>
         <!--Ribosome-->
         <scene sceneID="Epr-Eb-OFn">
@@ -2377,21 +2418,24 @@
         <image name="phosphoserineCarbon" width="230" height="156"/>
         <image name="phosphoserineEq" width="230" height="127"/>
         <image name="primary" width="223" height="223"/>
+        <image name="quaternary" width="640" height="480"/>
         <image name="ribosome" width="499" height="512"/>
         <image name="serine" width="592" height="601"/>
         <image name="small" width="40" height="13"/>
         <image name="smallunitribo" width="472" height="102"/>
         <image name="star" width="60" height="60"/>
         <image name="supertrna" width="509" height="793"/>
+        <image name="surfaceview" width="640" height="480"/>
+        <image name="tertiary" width="640" height="480"/>
         <image name="trna1" width="20" height="41"/>
         <image name="trna2" width="20" height="41"/>
         <image name="valine" width="592" height="601"/>
         <image name="zoomTrna" width="80" height="106"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ucV-br-wIf"/>
         <segue reference="qlc-X1-jNz"/>
-        <segue reference="gwR-qi-uF8"/>
+        <segue reference="ucV-br-wIf"/>
+        <segue reference="zzX-dG-Itj"/>
         <segue reference="gd2-g1-geQ"/>
         <segue reference="gDU-o2-OYP"/>
         <segue reference="nwk-oz-9cq"/>
