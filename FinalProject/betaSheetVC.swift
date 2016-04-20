@@ -11,14 +11,20 @@ import UIKit
 import SceneKit
 
 class betaSheetVC: UIViewController{
+    var count = 1
+    var sceneView = SCNView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let sceneView = self.view as! SCNView
+        sceneView = self.view as! SCNView
         sceneView.scene = betaSheetScene()
         sceneView.backgroundColor = UIColor.blackColor()
         sceneView.autoenablesDefaultLighting = true
         sceneView.allowsCameraControl = true
         addAlert()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: "handleTap")
+        tapGesture.numberOfTapsRequired = 2
+        self.view.addGestureRecognizer(tapGesture)
     }
     func addAlert(){
         let controller = UIAlertController()
@@ -32,5 +38,14 @@ class betaSheetVC: UIViewController{
         self.presentViewController(controller, animated: true, completion: nil)
         
         
+    }
+    
+    func handleTap(){
+        if count % 2 == 0{
+            sceneView.scene = betaSheet2()
+        } else {
+            sceneView.scene = betaSheetScene()
+        }
+        count += 1
     }
 }

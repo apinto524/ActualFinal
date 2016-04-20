@@ -35,7 +35,7 @@ class ahScene3: SCNScene{
         self.rootNode.addChildNode(cTermNode)
         
         let sphereGeom = SCNSphere(radius: 150)
-        sphereGeom.firstMaterial?.diffuse.contents = UIColor.redColor()
+        sphereGeom.firstMaterial?.diffuse.contents = UIColor.blueColor()
         
         let connectionGeom = SCNBox(width: 70, height: 500, length: 70, chamferRadius: 27)
         

@@ -27,6 +27,7 @@ class alphHelixVC: UIViewController{
         self.view.addGestureRecognizer(tapGesture)
         
         let longHold = UILongPressGestureRecognizer(target: self, action: "handleHold")
+        longHold.minimumPressDuration = 1.0
         self.view.addGestureRecognizer(longHold)
 
     }
@@ -52,7 +53,7 @@ class alphHelixVC: UIViewController{
        
     }
     func handleHold(){
-        
+        sceneView.scene = ahScene3()
     }
     
     
