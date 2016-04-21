@@ -27,6 +27,7 @@
 		EDBB2F541CC6EC9200A21557 /* ahScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F531CC6EC9200A21557 /* ahScene2.swift */; };
 		EDBB2F561CC6ED3200A21557 /* ahScene3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F551CC6ED3200A21557 /* ahScene3.swift */; };
 		EDBB2F581CC6FFF100A21557 /* betaSheet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F571CC6FFF100A21557 /* betaSheet2.swift */; };
+		EDBB2F5A1CC70AEA00A21557 /* activeSiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F591CC70AEA00A21557 /* activeSiteVC.swift */; };
 		EDC038C31CB085ED007C01FA /* alphaHelixScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC038C21CB085ED007C01FA /* alphaHelixScene.swift */; };
 		EDDDC8CB1CA3406D005FA5CE /* aminoAcidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */; };
 		EDF2D5CE1C9F867A00309B02 /* ribosomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */; };
@@ -76,6 +77,7 @@
 		EDBB2F531CC6EC9200A21557 /* ahScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ahScene2.swift; sourceTree = "<group>"; };
 		EDBB2F551CC6ED3200A21557 /* ahScene3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ahScene3.swift; sourceTree = "<group>"; };
 		EDBB2F571CC6FFF100A21557 /* betaSheet2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = betaSheet2.swift; sourceTree = "<group>"; };
+		EDBB2F591CC70AEA00A21557 /* activeSiteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = activeSiteVC.swift; sourceTree = "<group>"; };
 		EDC038C21CB085ED007C01FA /* alphaHelixScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alphaHelixScene.swift; sourceTree = "<group>"; };
 		EDDDC8CA1CA3406D005FA5CE /* aminoAcidVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoAcidVC.swift; sourceTree = "<group>"; };
 		EDF2D5CD1C9F867A00309B02 /* ribosomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ribosomeVC.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				EDBB2F531CC6EC9200A21557 /* ahScene2.swift */,
 				EDBB2F551CC6ED3200A21557 /* ahScene3.swift */,
 				EDBB2F571CC6FFF100A21557 /* betaSheet2.swift */,
+				EDBB2F591CC70AEA00A21557 /* activeSiteVC.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				EDBB2F561CC6ED3200A21557 /* ahScene3.swift in Sources */,
 				ED089CD21C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift in Sources */,
 				ED7BF39C1CA60F8800D364FF /* aminoContentStruct.swift in Sources */,
+				EDBB2F5A1CC70AEA00A21557 /* activeSiteVC.swift in Sources */,
 				EDF2D5CE1C9F867A00309B02 /* ribosomeVC.swift in Sources */,
 				EDDDC8CB1CA3406D005FA5CE /* aminoAcidVC.swift in Sources */,
 				ED089CA01C9DCEEF00BE0124 /* RootTableViewController.swift in Sources */,

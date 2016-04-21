@@ -34,6 +34,13 @@ class alphHelixVC: UIViewController{
     override func viewWillAppear(animated: Bool) {
         addAlert()
     }
+
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) {
+        if motion == .MotionShake {
+           sceneView.scene = alphaHelixScene()
+        }
+    }
+    
     func addAlert(){
         let controller = UIAlertController()
         controller.title = "About Alpha Helices"
