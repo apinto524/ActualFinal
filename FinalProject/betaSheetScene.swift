@@ -7,6 +7,7 @@
 //
 
 import SceneKit
+import UIKit
 
 class betaSheetScene: SCNScene {
     override init(){
@@ -21,6 +22,17 @@ class betaSheetScene: SCNScene {
     func createScene(){
         let point = SCNPyramid(width: 5.0, height: 5.0, length: 1.0)
         let length = SCNBox(width: 2.0, height: 15.0, length: 1.0, chamferRadius: 0)
+        
+        let circleCenter = CGPointMake(-7.5,0)
+        let circleRadius = CGFloat(5)
+        
+        let start = CGFloat(M_PI - 0.1)
+        let end = start + CGFloat(M_PI/2)
+        let circlePath = UIBezierPath(arcCenter: circleCenter, radius: circleRadius, startAngle: start, endAngle: end, clockwise: true)
+
+        let circleShape = SCNShape(path: circlePath, extrusionDepth: 0.1)
+        let circleNode = SCNNode(geometry: circleShape)
+        self.rootNode.addChildNode(circleNode)
         
         point.firstMaterial?.diffuse.contents = UIColor.greenColor()
         length.firstMaterial?.diffuse.contents = UIColor.greenColor()
@@ -44,6 +56,7 @@ class betaSheetScene: SCNScene {
             switch count{
             case 0:
                 pointNode.position.x -= Float(length.height) / 2.0
+                
             case 1:
                 pointNode.position.x += Float(length.height) / 2.0
                 pointNode.eulerAngles = SCNVector3(x: 3.0 , y: 0, z: 1.5 )
@@ -75,7 +88,7 @@ class betaSheetScene: SCNScene {
                 print("error")
             }
             
-
+                print("\(count) \(pointNode.position)")
             
             
             self.rootNode.addChildNode(pointNode)

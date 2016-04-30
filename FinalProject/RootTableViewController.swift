@@ -9,7 +9,7 @@
 import UIKit
 
 class RootTableViewController: UITableViewController{
-    let steps = ["Translation","Primary Structure", "Secondary Structure","Tertiary and Quaternary Structure"]
+    let steps = ["Translation","Primary Structure", "Secondary Structure","Tertiary and Quaternary Structure", "Quiz Yourself"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,6 +51,10 @@ class RootTableViewController: UITableViewController{
         }
         if indexPath.row == 3{
             let stepNodeController = self.storyboard!.instantiateViewControllerWithIdentifier("TertiaryQuaternaryStructVC")as! TertiaryQuaternaryStructVC
+            self.navigationController!.pushViewController(stepNodeController, animated: true)
+        }
+        if indexPath.row == 4{
+            let stepNodeController = self.storyboard?.instantiateViewControllerWithIdentifier("quizYourself") as! quizYourself
             self.navigationController!.pushViewController(stepNodeController, animated: true)
         }
     }

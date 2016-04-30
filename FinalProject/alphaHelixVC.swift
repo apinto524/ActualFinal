@@ -44,7 +44,7 @@ class alphHelixVC: UIViewController{
     func addAlert(){
         let controller = UIAlertController()
         controller.title = "About Alpha Helices"
-        controller.message = "Alpha Helices ......"
+        controller.message = "Alpha Helices form to stabilize the protein structure. This structure forms hydrogen bonds within itself to enhance it's stability. Each turn of the alpha helix is made up of 3.6 amino acids, with 100 degrees seperating each amino acid. Between every fourth amino acid, a hydrogen bond forms of 5.4 Angstroms in length. The hydrogen bond forms between the first carboxyl group pointing down towards the fifth residue's amino group. This creates a macroscopic dipole moment."
         let gotitAction = UIAlertAction(title: "I got it", style: UIAlertActionStyle.Default, handler: {
             action in self.dismissViewControllerAnimated(true, completion: nil)
 

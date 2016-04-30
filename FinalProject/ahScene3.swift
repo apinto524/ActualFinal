@@ -22,13 +22,13 @@ class ahScene3: SCNScene{
     
     func createScene(){
         count += 1
-        let nTermlabel = SCNText(string: "N terminal", extrusionDepth: 20)
+        let nTermlabel = SCNText(string: "Positive N Terminal", extrusionDepth: 20)
         nTermlabel.font = UIFont(name: "Helvetica", size: 70)
         let nTermNode = SCNNode(geometry: nTermlabel)
         nTermNode.position = SCNVector3(x: 450, y: 600, z: 0)
         self.rootNode.addChildNode(nTermNode)
 
-        let cTermlabel = SCNText(string: "C Terminal", extrusionDepth: 20)
+        let cTermlabel = SCNText(string: "Negative C Terminal", extrusionDepth: 20)
         cTermlabel.font = UIFont(name: "Helvetica", size: 70)
         let cTermNode = SCNNode(geometry: cTermlabel)
         cTermNode.position = SCNVector3(x: 450, y: -1890, z: 0)
@@ -50,9 +50,73 @@ class ahScene3: SCNScene{
             if radians >= 2{
                 radians -= 2
             }
-            
-            let sphereNode = SCNNode(geometry: sphereGeom)
             let connectionNode = SCNNode(geometry: connectionGeom)
+            
+            switch count{
+            case 1:
+                connectionNode.eulerAngles = SCNVector3( 0.5, -0.7, 1.76)
+                
+                
+            case 2:
+                connectionNode.eulerAngles = SCNVector3( (radians)/0.97, -0.3, 1.6)
+            case 3:
+                connectionNode.eulerAngles = SCNVector3( radians, 0, -(radians)/2)
+            case 4:
+                connectionNode.eulerAngles = SCNVector3( (radians)/0.5, -0.3, 1.2)
+            case 5:
+                connectionNode.eulerAngles = SCNVector3( 2.0, -0.3, 0.9)
+            case 6:
+                connectionNode.eulerAngles = SCNVector3( (radians)/2.5, 0.3, -radians * 1.75)
+            case 7:
+                connectionNode.eulerAngles = SCNVector3( radians, 0, -(radians)/2)
+            case 8:
+                connectionNode.eulerAngles = SCNVector3( -(radians)/4, 0, radians/1.5)
+            case 9:
+                connectionNode.eulerAngles = SCNVector3( (radians)/0.7, -0.3, 1.8)
+            case 10:
+                connectionNode.eulerAngles = SCNVector3( 2.0, 0, 1.9)
+                
+            case 11:
+                connectionNode.eulerAngles = SCNVector3( 0.5, -0.7, 0.76)
+               
+            case 12:
+                connectionNode.eulerAngles = SCNVector3( 1.8, 0, 1.6)
+                
+                
+            case 13:
+                connectionNode.eulerAngles = SCNVector3( -(radians)/1.5, -0.3, -1.0)
+                
+                
+            case 14:
+                connectionNode.eulerAngles = SCNVector3( 2.0, 0, 1.9)
+                
+                
+            case 15:
+                connectionNode.eulerAngles = SCNVector3( 0.5, -0.7, 0.76)
+                
+                
+            case 16:
+                connectionNode.eulerAngles = SCNVector3( 1.6, -0.2, 0.86)
+                
+                
+            case 17:
+                connectionNode.eulerAngles = SCNVector3( (radians)/2.5, 0.3, -radians * 1.75)
+                
+                
+            case 18:
+                connectionNode.eulerAngles = SCNVector3( 1.0, -0.6, 0.6)
+                
+                
+            case 19:
+                connectionNode.eulerAngles = SCNVector3( 2.0, -0.2, 1.9)
+                
+            default:
+                print("need to fix")
+            }
+            
+
+            let sphereNode = SCNNode(geometry: sphereGeom)
+      
             
             let angle = Double(radians * M_PI )
             // print("\(radians)pi theta")
@@ -76,54 +140,11 @@ class ahScene3: SCNScene{
             connectionNode.position = SCNVector3(midPointx, midPointy, midPointz)
             pointToNTerm = SCNVector3(x: xPosition, y: yPosition, z: zPosition)
             
-            connectionNode.eulerAngles = SCNVector3( 1.8, 0, 1.6)
+            //connectionNode.eulerAngles = SCNVector3( 1.8, 0, 1.6)
             
             //position peptide bonds
             
-            switch count{
-            case 1:
-                connectionNode.eulerAngles = SCNVector3( 0.5, -0.7, 1.76)
-            case 2:
-                connectionNode.eulerAngles = SCNVector3( (radians)/0.97, -0.3, 1.6)
-            case 3:
-                connectionNode.eulerAngles = SCNVector3( radians, 0, -(radians)/2)
-            case 4:
-                connectionNode.eulerAngles = SCNVector3( (radians)/0.5, -0.3, 1.2)
-            case 5:
-                connectionNode.eulerAngles = SCNVector3( 2.0, -0.3, 0.9)
-            case 6:
-                connectionNode.eulerAngles = SCNVector3( (radians)/2.5, 0.3, -radians * 1.75)
-            case 7:
-                connectionNode.eulerAngles = SCNVector3( radians, 0, -(radians)/2)
-            case 8:
-                connectionNode.eulerAngles = SCNVector3( -(radians)/4, 0, radians/1.5)
-            case 9:
-                connectionNode.eulerAngles = SCNVector3( (radians)/0.7, -0.3, 1.8)
-            case 10:
-                connectionNode.eulerAngles = SCNVector3( 2.0, 0, 1.9)
-            case 11:
-                connectionNode.eulerAngles = SCNVector3( 0.5, -0.7, 0.76)
-            case 12:
-                connectionNode.eulerAngles = SCNVector3( 1.8, 0, 1.6)
-            case 13:
-                connectionNode.eulerAngles = SCNVector3( -(radians)/1.5, -0.3, -1.0)
-            case 14:
-                connectionNode.eulerAngles = SCNVector3( 2.0, 0, 1.9)
-            case 15:
-                connectionNode.eulerAngles = SCNVector3( 0.5, -0.7, 0.76)
-            case 16:
-                connectionNode.eulerAngles = SCNVector3( 1.6, -0.2, 0.86)
-            case 17:
-                connectionNode.eulerAngles = SCNVector3( (radians)/2.5, 0.3, -radians * 1.75)
-            case 18:
-                connectionNode.eulerAngles = SCNVector3( 1.0, -0.6, 0.6)
-            case 19:
-                connectionNode.eulerAngles = SCNVector3( 2.0, -0.2, 1.9)
-            default:
-                print("need to fix")
-            }
-            
-            print(" ")
+                        print(" ")
             
             
             count += 1

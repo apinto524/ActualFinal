@@ -20,6 +20,7 @@
 		ED089CD21C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED089CD11C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift */; };
 		ED1A90A91CC2DF1F0049E925 /* betaSheetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A90A81CC2DF1E0049E925 /* betaSheetScene.swift */; };
 		ED2686451CAB1F2A00AE0B90 /* posttranslationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2686441CAB1F2A00AE0B90 /* posttranslationVC.swift */; };
+		ED34C0FD1CD18F0E000AA350 /* quizYourself.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34C0FC1CD18F0E000AA350 /* quizYourself.swift */; };
 		ED7A50B91CC405560093D1C9 /* betaSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7A50B81CC405560093D1C9 /* betaSheetVC.swift */; };
 		ED7BF39C1CA60F8800D364FF /* aminoContentStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */; };
 		ED7BF3A01CA6281D00D364FF /* aminoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */; };
@@ -70,6 +71,7 @@
 		ED089CD11C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TertiaryQuaternaryStructVC.swift; sourceTree = "<group>"; };
 		ED1A90A81CC2DF1E0049E925 /* betaSheetScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = betaSheetScene.swift; sourceTree = "<group>"; };
 		ED2686441CAB1F2A00AE0B90 /* posttranslationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = posttranslationVC.swift; sourceTree = "<group>"; };
+		ED34C0FC1CD18F0E000AA350 /* quizYourself.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizYourself.swift; sourceTree = "<group>"; };
 		ED7A50B81CC405560093D1C9 /* betaSheetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = betaSheetVC.swift; sourceTree = "<group>"; };
 		ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoContentStruct.swift; sourceTree = "<group>"; };
 		ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoTableVC.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				EDBB2F551CC6ED3200A21557 /* ahScene3.swift */,
 				EDBB2F571CC6FFF100A21557 /* betaSheet2.swift */,
 				EDBB2F591CC70AEA00A21557 /* activeSiteVC.swift */,
+				ED34C0FC1CD18F0E000AA350 /* quizYourself.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				ED089C9E1C9DCEEF00BE0124 /* AppDelegate.swift in Sources */,
 				ED089CD01C9DDABD00BE0124 /* SecondaryStructureVC.swift in Sources */,
 				ED089CCE1C9DDAAD00BE0124 /* PrimaryStructureVC.swift in Sources */,
+				ED34C0FD1CD18F0E000AA350 /* quizYourself.swift in Sources */,
 				ED7BF3A01CA6281D00D364FF /* aminoTableVC.swift in Sources */,
 				EDC038C31CB085ED007C01FA /* alphaHelixScene.swift in Sources */,
 				EDBB2F581CC6FFF100A21557 /* betaSheet2.swift in Sources */,

@@ -406,7 +406,9 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTb-iV-Qjn">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Continue"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="h34-1I-Zbc" kind="show" id="ucV-br-wIf"/>
                                 </connections>
@@ -1013,6 +1015,24 @@
             </objects>
             <point key="canvasLocation" x="-1534.5" y="-118.5"/>
         </scene>
+        <!--Quiz Yourself-->
+        <scene sceneID="FkL-iq-mT8">
+            <objects>
+                <viewController storyboardIdentifier="quizYourself" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x42-4K-n7N" customClass="quizYourself" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XcJ-fT-aXM"/>
+                        <viewControllerLayoutGuide type="bottom" id="jSD-0O-dt5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9BN-i2-05I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HAq-dB-PKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4249.5" y="1239.75"/>
+        </scene>
         <!--Tertiary Quaternary StructVC-->
         <scene sceneID="bke-SC-QpC">
             <objects>
@@ -1029,7 +1049,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="quaternary"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="97" y="371" width="206" height="204"/>
+                                    <rect key="frame" x="97" y="530" width="206" height="204"/>
                                 </variation>
                                 <connections>
                                     <segue destination="J67-uP-wVs" kind="presentation" id="Zm5-PD-Jru"/>
@@ -1039,31 +1059,53 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="tertiary"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="97" y="88" width="206" height="209"/>
+                                    <rect key="frame" x="97" y="118" width="206" height="209"/>
                                 </variation>
                                 <connections>
                                     <segue destination="3ar-hf-wP8" kind="show" id="S1w-hy-75T"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tertiary Structure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-3b-mrc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="133" y="77" width="135" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quaternary Structure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUF-uW-EdH">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="119" y="484" width="162" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ZnZ-1D-u7V"/>
                                 <exclude reference="v07-8j-7HQ"/>
+                                <exclude reference="5zO-3b-mrc"/>
+                                <exclude reference="ZUF-uW-EdH"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="ZnZ-1D-u7V"/>
                                 <include reference="v07-8j-7HQ"/>
+                                <include reference="5zO-3b-mrc"/>
+                                <include reference="ZUF-uW-EdH"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U76-2k-I7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3567" y="1588.5"/>
+            <point key="canvasLocation" x="-3567" y="1677"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="V0x-bS-3YE">
@@ -1074,6 +1116,7 @@
                         <viewControllerLayoutGuide type="bottom" id="h0b-MY-7Fm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ad4-kE-nHU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1085,7 +1128,7 @@
         <!--Tertiary Quaternary StructVC-->
         <scene sceneID="Jwh-aJ-lgl">
             <objects>
-                <viewController storyboardIdentifier="modalquaternary" id="J67-uP-wVs" customClass="TertiaryQuaternaryStructVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="modalquaternary" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J67-uP-wVs" customClass="TertiaryQuaternaryStructVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rSK-jz-ySN"/>
                         <viewControllerLayoutGuide type="bottom" id="Y0u-ZM-TRi"/>
@@ -1100,7 +1143,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="120" y="684" width="238" height="30"/>
+                                    <rect key="frame" x="81" y="699" width="238" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="goback:" destination="J67-uP-wVs" eventType="touchUpInside" id="v8U-NT-XxH"/>
@@ -1112,18 +1155,29 @@
                                     <rect key="frame" x="76" y="433" width="249" height="208"/>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rO-Aa-qSa">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <string key="text">The quaternary structure of a protein is the clustering of multiple peptide or protein chains to form a final protein. In hemoglobin shown below, there are four seperate protein chains that come together to form a single protein. The quaternary structure is stabilized by noncovalent bonds between the R group of the seperate polypeptides. Hemoglobin has two native states, a relaxed state -- or oxyhemoglobin, and a tense state -- or deoxyhemoglobin. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="61" y="91" width="279" height="305"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="9At-Kf-yOz"/>
                                 <exclude reference="2to-0S-vJk"/>
+                                <exclude reference="0rO-Aa-qSa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="9At-Kf-yOz"/>
                                 <include reference="2to-0S-vJk"/>
+                                <include reference="0rO-Aa-qSa"/>
                             </mask>
                         </variation>
                     </view>
@@ -1146,7 +1200,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDM-zb-hiH">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Continue"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="rU4-9m-Ncp" kind="show" id="jMn-CK-wqR"/>
                                 </connections>

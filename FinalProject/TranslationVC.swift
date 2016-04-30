@@ -43,6 +43,7 @@ class TranslationVC: UIViewController{
         super.viewDidLoad()
          hideEverything()
         peptideSize = self.peptide.frame.size
+        quizContainer.hidden = true
          self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
         
   
@@ -329,7 +330,7 @@ class TranslationVC: UIViewController{
 
         continuebutton.hidden = false
         
-        self.showQuiz()
+        //self.showQuiz()
        
     }
 
