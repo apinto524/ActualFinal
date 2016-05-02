@@ -32,7 +32,7 @@ class ribosomeVC: UIViewController{
         super.viewDidLoad()
         setDefaults()
         self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
-        
+        addAlert()
     }
     override func viewWillAppear(animated: Bool) {
         setDefaults()
@@ -216,4 +216,18 @@ class ribosomeVC: UIViewController{
         })
         
     }
+    func addAlert(){
+        let controller = UIAlertController()
+        controller.title = "Internal Ribosome View"
+        controller.message = "The ribosome has three sites in which tRNA interact with. The A site functions as a acceptor for the growing peptide. The P site holds the tRNA carrying the amino acid for the growing peptide. The E site is where the tRNA exits the ribosome."
+        let gotitAction = UIAlertAction(title: "I got it", style: UIAlertActionStyle.Default, handler: {
+            action in self.dismissViewControllerAnimated(true, completion: nil)
+            
+        })
+        controller.addAction(gotitAction)
+        self.presentViewController(controller, animated: true, completion: nil)
+        
+        
+    }
+
 }

@@ -25,6 +25,9 @@
 		ED7BF39C1CA60F8800D364FF /* aminoContentStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */; };
 		ED7BF3A01CA6281D00D364FF /* aminoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */; };
 		ED8833C61CB1C27F00ECF78D /* alphaHelixVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8833C51CB1C27F00ECF78D /* alphaHelixVC.swift */; };
+		ED9630351CD6D6B000F2FCB2 /* tertiaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9630341CD6D6B000F2FCB2 /* tertiaryVC.swift */; };
+		ED9630391CD7CC4A00F2FCB2 /* tRNAVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9630381CD7CC4A00F2FCB2 /* tRNAVC.swift */; };
+		ED96303D1CD7DDA700F2FCB2 /* quizStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED96303C1CD7DDA700F2FCB2 /* quizStruct.swift */; };
 		EDBB2F541CC6EC9200A21557 /* ahScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F531CC6EC9200A21557 /* ahScene2.swift */; };
 		EDBB2F561CC6ED3200A21557 /* ahScene3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F551CC6ED3200A21557 /* ahScene3.swift */; };
 		EDBB2F581CC6FFF100A21557 /* betaSheet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F571CC6FFF100A21557 /* betaSheet2.swift */; };
@@ -76,6 +79,9 @@
 		ED7BF39B1CA60F8800D364FF /* aminoContentStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoContentStruct.swift; sourceTree = "<group>"; };
 		ED7BF39F1CA6281D00D364FF /* aminoTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aminoTableVC.swift; sourceTree = "<group>"; };
 		ED8833C51CB1C27F00ECF78D /* alphaHelixVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alphaHelixVC.swift; sourceTree = "<group>"; };
+		ED9630341CD6D6B000F2FCB2 /* tertiaryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tertiaryVC.swift; sourceTree = "<group>"; };
+		ED9630381CD7CC4A00F2FCB2 /* tRNAVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tRNAVC.swift; sourceTree = "<group>"; };
+		ED96303C1CD7DDA700F2FCB2 /* quizStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizStruct.swift; sourceTree = "<group>"; };
 		EDBB2F531CC6EC9200A21557 /* ahScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ahScene2.swift; sourceTree = "<group>"; };
 		EDBB2F551CC6ED3200A21557 /* ahScene3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ahScene3.swift; sourceTree = "<group>"; };
 		EDBB2F571CC6FFF100A21557 /* betaSheet2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = betaSheet2.swift; sourceTree = "<group>"; };
@@ -157,6 +163,9 @@
 				EDBB2F571CC6FFF100A21557 /* betaSheet2.swift */,
 				EDBB2F591CC70AEA00A21557 /* activeSiteVC.swift */,
 				ED34C0FC1CD18F0E000AA350 /* quizYourself.swift */,
+				ED9630341CD6D6B000F2FCB2 /* tertiaryVC.swift */,
+				ED9630381CD7CC4A00F2FCB2 /* tRNAVC.swift */,
+				ED96303C1CD7DDA700F2FCB2 /* quizStruct.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -313,7 +322,9 @@
 				ED8833C61CB1C27F00ECF78D /* alphaHelixVC.swift in Sources */,
 				ED2686451CAB1F2A00AE0B90 /* posttranslationVC.swift in Sources */,
 				EDBB2F541CC6EC9200A21557 /* ahScene2.swift in Sources */,
+				ED9630391CD7CC4A00F2FCB2 /* tRNAVC.swift in Sources */,
 				ED1A90A91CC2DF1F0049E925 /* betaSheetScene.swift in Sources */,
+				ED96303D1CD7DDA700F2FCB2 /* quizStruct.swift in Sources */,
 				ED7A50B91CC405560093D1C9 /* betaSheetVC.swift in Sources */,
 				EDBB2F561CC6ED3200A21557 /* ahScene3.swift in Sources */,
 				ED089CD21C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift in Sources */,
@@ -330,6 +341,7 @@
 				EDC038C31CB085ED007C01FA /* alphaHelixScene.swift in Sources */,
 				EDBB2F581CC6FFF100A21557 /* betaSheet2.swift in Sources */,
 				ED089CCC1C9DDAA300BE0124 /* TranslationVC.swift in Sources */,
+				ED9630351CD6D6B000F2FCB2 /* tertiaryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

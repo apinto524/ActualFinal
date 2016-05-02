@@ -61,6 +61,15 @@ class alphHelixVC: UIViewController{
     }
     func handleHold(){
         sceneView.scene = ahScene3()
+        let controller = UIAlertController()
+        controller.title = "Dipole Key"
+        controller.message = "Blue represents the positive electromagnetic end of the dipole. Red represents the negative electromagnetic end of the dipole."
+        let gotitAction = UIAlertAction(title: "I got it", style: UIAlertActionStyle.Default, handler: {
+            action in self.dismissViewControllerAnimated(true, completion: nil)
+            
+        })
+        controller.addAction(gotitAction)
+        self.presentViewController(controller, animated: true, completion: nil)
     }
     
     

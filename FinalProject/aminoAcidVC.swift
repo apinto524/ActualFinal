@@ -34,5 +34,8 @@ class aminoAcidVC: UIViewController{
         
     }
     
+    @IBAction func goHome(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     
 }
