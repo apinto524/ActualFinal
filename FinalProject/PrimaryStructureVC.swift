@@ -55,7 +55,7 @@ class PrimaryStructureVC: UIViewController{
         
         informationView.hidden = true
         self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
- 
+        addAlert()
     }
     
     @IBAction func sendingtoCarbon(sender: AnyObject) {
@@ -79,4 +79,19 @@ class PrimaryStructureVC: UIViewController{
     @IBAction func postTransMod(sender: AnyObject) {
         performSegueWithIdentifier("postTransMod", sender: self)
     }
+    
+    func addAlert(){
+        let controller = UIAlertController()
+        controller.title = "Primary Structure"
+        controller.message = "The primary structure is the sequence of amino acids to form a poly peptide chain. The sequence of amino acids determines the function and structure of the protein. This means that any activity that the protein carries out is directly coorelated to the primary structure."
+        let gotitAction = UIAlertAction(title: "I got it", style: UIAlertActionStyle.Default, handler: {
+            action in self.dismissViewControllerAnimated(true, completion: nil)
+            
+        })
+        controller.addAction(gotitAction)
+        self.presentViewController(controller, animated: true, completion: nil)
+        
+        
+    }
+
 }

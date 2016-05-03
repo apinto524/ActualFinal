@@ -18,5 +18,7 @@ struct quizStruct{
     
     var correctAnswer: String!
     var image: String!
-    var findAnswerVC: String!
+    
+    
+    var indexNum: Int!
 }
