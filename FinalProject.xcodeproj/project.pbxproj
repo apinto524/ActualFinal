@@ -28,6 +28,7 @@
 		ED9630351CD6D6B000F2FCB2 /* tertiaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9630341CD6D6B000F2FCB2 /* tertiaryVC.swift */; };
 		ED9630391CD7CC4A00F2FCB2 /* tRNAVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9630381CD7CC4A00F2FCB2 /* tRNAVC.swift */; };
 		ED96303D1CD7DDA700F2FCB2 /* quizStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED96303C1CD7DDA700F2FCB2 /* quizStruct.swift */; };
+		ED96303F1CD8475800F2FCB2 /* carbonBackBone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED96303E1CD8475800F2FCB2 /* carbonBackBone.swift */; };
 		EDBB2F541CC6EC9200A21557 /* ahScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F531CC6EC9200A21557 /* ahScene2.swift */; };
 		EDBB2F561CC6ED3200A21557 /* ahScene3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F551CC6ED3200A21557 /* ahScene3.swift */; };
 		EDBB2F581CC6FFF100A21557 /* betaSheet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB2F571CC6FFF100A21557 /* betaSheet2.swift */; };
@@ -82,6 +83,7 @@
 		ED9630341CD6D6B000F2FCB2 /* tertiaryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tertiaryVC.swift; sourceTree = "<group>"; };
 		ED9630381CD7CC4A00F2FCB2 /* tRNAVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tRNAVC.swift; sourceTree = "<group>"; };
 		ED96303C1CD7DDA700F2FCB2 /* quizStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizStruct.swift; sourceTree = "<group>"; };
+		ED96303E1CD8475800F2FCB2 /* carbonBackBone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carbonBackBone.swift; sourceTree = "<group>"; };
 		EDBB2F531CC6EC9200A21557 /* ahScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ahScene2.swift; sourceTree = "<group>"; };
 		EDBB2F551CC6ED3200A21557 /* ahScene3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ahScene3.swift; sourceTree = "<group>"; };
 		EDBB2F571CC6FFF100A21557 /* betaSheet2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = betaSheet2.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				ED9630341CD6D6B000F2FCB2 /* tertiaryVC.swift */,
 				ED9630381CD7CC4A00F2FCB2 /* tRNAVC.swift */,
 				ED96303C1CD7DDA700F2FCB2 /* quizStruct.swift */,
+				ED96303E1CD8475800F2FCB2 /* carbonBackBone.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				ED7A50B91CC405560093D1C9 /* betaSheetVC.swift in Sources */,
 				EDBB2F561CC6ED3200A21557 /* ahScene3.swift in Sources */,
 				ED089CD21C9DDACF00BE0124 /* TertiaryQuaternaryStructVC.swift in Sources */,
+				ED96303F1CD8475800F2FCB2 /* carbonBackBone.swift in Sources */,
 				ED7BF39C1CA60F8800D364FF /* aminoContentStruct.swift in Sources */,
 				EDBB2F5A1CC70AEA00A21557 /* activeSiteVC.swift in Sources */,
 				EDF2D5CE1C9F867A00309B02 /* ribosomeVC.swift in Sources */,

@@ -2234,7 +2234,7 @@
         <!--Carbon Backbone-->
         <scene sceneID="UZd-Uh-cq2">
             <objects>
-                <viewController title="Carbon Backbone" id="Qzk-Z9-pzp" customClass="TertiaryQuaternaryStructVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="carbonBackBone" title="Carbon Backbone" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qzk-Z9-pzp" customClass="carbonBackBone" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LCT-TU-Mk8"/>
                         <viewControllerLayoutGuide type="bottom" id="1tL-AG-ZjR"/>
