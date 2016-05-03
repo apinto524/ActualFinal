@@ -31,16 +31,26 @@
                             <outlet property="delegate" destination="E5s-E8-ToI" id="04u-2R-h2X"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Menu" id="0c0-M5-PWA"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Menu" id="0c0-M5-PWA">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="e7e-AX-bZf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5h6-ow-CXW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sr1-ou-83r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4663.5" y="-364.5"/>
         </scene>
-        <!--Translation-->
+        <!--TranslationVC-->
         <scene sceneID="g8n-4d-qg1">
             <objects>
-                <viewController storyboardIdentifier="TranslationVC" title="Translation" id="YfS-x1-mga" customClass="TranslationVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TranslationVC" id="YfS-x1-mga" customClass="TranslationVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="amu-SC-e5A"/>
                         <viewControllerLayoutGuide type="bottom" id="h1q-qE-Q0a"/>
@@ -312,10 +322,10 @@
             </objects>
             <point key="canvasLocation" x="-3592.5" y="-1365"/>
         </scene>
-        <!--Primary Structure-->
+        <!--Primary StructureVC-->
         <scene sceneID="UpI-WI-ncd">
             <objects>
-                <viewController storyboardIdentifier="PrimaryStructureVC" title="Primary Structure" id="NYA-JX-eOp" customClass="PrimaryStructureVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PrimaryStructureVC" id="NYA-JX-eOp" customClass="PrimaryStructureVC" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1we-1b-Xk3"/>
                         <viewControllerLayoutGuide type="bottom" id="S5s-pt-qC2"/>
@@ -1117,13 +1127,13 @@
                                     <rect key="frame" x="148" y="631" width="116" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5h-OR-a93">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5h-OR-a93">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="50" y="106" width="300" height="231"/>
+                                    <rect key="frame" x="50" y="39" width="300" height="231"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Found in view:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-es-c56">
@@ -1137,11 +1147,19 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTr-ev-Kph">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="ViewControllerName"/>
+                                <state key="normal" title="ViewControllerName">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="148" y="702" width="156" height="30"/>
                                 </variation>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VkA-Nm-TPv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="128" y="233" width="144" height="128"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -1159,6 +1177,7 @@
                                 <exclude reference="q5h-OR-a93"/>
                                 <exclude reference="WpF-es-c56"/>
                                 <exclude reference="zTr-ev-Kph"/>
+                                <exclude reference="VkA-Nm-TPv"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1176,9 +1195,20 @@
                                 <include reference="q5h-OR-a93"/>
                                 <include reference="WpF-es-c56"/>
                                 <include reference="zTr-ev-Kph"/>
+                                <include reference="VkA-Nm-TPv"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="answerA" destination="vg5-iE-53J" id="pYf-hi-IIA"/>
+                        <outlet property="answerB" destination="GQw-Xr-o2u" id="UPN-bg-2gt"/>
+                        <outlet property="answerC" destination="rzQ-DE-7qr" id="Lr8-BG-GwR"/>
+                        <outlet property="answerD" destination="cGu-qQ-m2R" id="1fr-6p-UK4"/>
+                        <outlet property="imageView" destination="VkA-Nm-TPv" id="XRq-6H-6EI"/>
+                        <outlet property="question" destination="q5h-OR-a93" id="XE6-wo-kTz"/>
+                        <outlet property="score" destination="unc-Pf-gyB" id="174-89-NHe"/>
+                        <outlet property="viewControllerButton" destination="zTr-ev-Kph" id="rut-E8-Zi5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAq-dB-PKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1200,7 +1230,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="quaternary"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="97" y="530" width="206" height="204"/>
+                                    <rect key="frame" x="97" y="456" width="206" height="204"/>
                                 </variation>
                                 <connections>
                                     <segue destination="J67-uP-wVs" kind="presentation" id="Zm5-PD-Jru"/>
@@ -1231,7 +1261,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="119" y="484" width="162" height="21"/>
+                                    <rect key="frame" x="119" y="427" width="162" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pe-TB-Hcx">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <string key="text">Four seperate polypeptide chains come together to form the quaternary structure. This structure is the protein hemoglobin (HBA1).</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.66713023559999995" green="0.65808440069999996" blue="0.6587003642" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="668" width="262" height="72"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The polypeptide chain reaches it's final protein geometry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5U-Kn-pNU">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.66713023559999995" green="0.65808440069999996" blue="0.6587003642" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="335" width="262" height="49"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -1242,6 +1291,8 @@
                                 <exclude reference="v07-8j-7HQ"/>
                                 <exclude reference="5zO-3b-mrc"/>
                                 <exclude reference="ZUF-uW-EdH"/>
+                                <exclude reference="0pe-TB-Hcx"/>
+                                <exclude reference="V5U-Kn-pNU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1250,6 +1301,8 @@
                                 <include reference="v07-8j-7HQ"/>
                                 <include reference="5zO-3b-mrc"/>
                                 <include reference="ZUF-uW-EdH"/>
+                                <include reference="0pe-TB-Hcx"/>
+                                <include reference="V5U-Kn-pNU"/>
                             </mask>
                         </variation>
                     </view>
@@ -1364,16 +1417,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oxygen2" translatesAutoresizingMaskIntoConstraints="NO" id="yym-1T-0qs">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="298" y="441" width="87" height="66"/>
+                                    <rect key="frame" x="293" y="415" width="87" height="66"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uppersticks2" translatesAutoresizingMaskIntoConstraints="NO" id="hCG-lY-p2d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uppersticks1" translatesAutoresizingMaskIntoConstraints="NO" id="hCG-lY-p2d">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="63" y="234" width="303" height="124"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hemePlanewithFe2" translatesAutoresizingMaskIntoConstraints="NO" id="NrU-4e-p94">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hemePlanewithFe1" translatesAutoresizingMaskIntoConstraints="NO" id="NrU-4e-p94">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="77" y="353" width="247" height="93"/>
@@ -1397,6 +1450,72 @@
                                     <rect key="frame" x="55" y="446" width="137" height="82"/>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proximal Histidine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvi-w0-3sB">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.098211094799999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="109" y="205" width="137" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha Helix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0d-2E-gxl">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.90378605769230769" green="0.43856429607765302" blue="0.12003222022554291" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="252" y="226" width="97" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heme Plane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh7-ec-p5G">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.052975194320000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="405" width="97" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oxygen (O2)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKt-ME-nk5">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.98538197988034959" blue="0.015747601649675591" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="289" y="521" width="105" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iron (Fe)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPD-ST-8Dw">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="0.89140624999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="228" y="344" width="72" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distal Histidine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39u-p3-3h1">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="175" y="486" width="125" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJN-Qq-ViT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Click to view animation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="703" width="168" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clicked:" destination="Auu-2C-UgN" eventType="touchUpInside" id="aeO-Ot-r9H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -1406,6 +1525,13 @@
                                 <exclude reference="NrU-4e-p94"/>
                                 <exclude reference="cnd-E0-hma"/>
                                 <exclude reference="QGm-p9-xcw"/>
+                                <exclude reference="fvi-w0-3sB"/>
+                                <exclude reference="M0d-2E-gxl"/>
+                                <exclude reference="Sh7-ec-p5G"/>
+                                <exclude reference="pKt-ME-nk5"/>
+                                <exclude reference="VPD-ST-8Dw"/>
+                                <exclude reference="39u-p3-3h1"/>
+                                <exclude reference="oJN-Qq-ViT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1415,13 +1541,25 @@
                                 <include reference="NrU-4e-p94"/>
                                 <include reference="cnd-E0-hma"/>
                                 <include reference="QGm-p9-xcw"/>
+                                <include reference="fvi-w0-3sB"/>
+                                <include reference="M0d-2E-gxl"/>
+                                <include reference="Sh7-ec-p5G"/>
+                                <include reference="pKt-ME-nk5"/>
+                                <include reference="VPD-ST-8Dw"/>
+                                <include reference="39u-p3-3h1"/>
+                                <include reference="oJN-Qq-ViT"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="alphaHelixLabel" destination="M0d-2E-gxl" id="3To-Dl-9Y1"/>
                         <outlet property="animateableHemeIronSphereSideView" destination="NrU-4e-p94" id="ctE-iI-6G3"/>
+                        <outlet property="distalLabel" destination="39u-p3-3h1" id="6nB-u0-eJb"/>
+                        <outlet property="hemeLabel" destination="Sh7-ec-p5G" id="s9s-dl-XrU"/>
+                        <outlet property="ironLabel" destination="VPD-ST-8Dw" id="IL8-Jr-oDe"/>
                         <outlet property="oxygen2" destination="yym-1T-0qs" id="bm5-h9-LcB"/>
-                        <outlet property="oxygenOrigin" destination="yym-1T-0qs" id="7ZS-T9-CZ3"/>
+                        <outlet property="oxygenLabel" destination="pKt-ME-nk5" id="Nil-8J-qaC"/>
+                        <outlet property="proximalLabel" destination="fvi-w0-3sB" id="4dA-GG-XyM"/>
                         <outlet property="sticksLowerHelix" destination="QGm-p9-xcw" id="0Hn-OU-Qxd"/>
                         <outlet property="sticksUpperHelix" destination="hCG-lY-p2d" id="z82-I6-CRb"/>
                     </connections>
@@ -2810,7 +2948,8 @@
         <image name="background" width="600" height="375"/>
         <image name="circle" width="30" height="31"/>
         <image name="efhand" width="800" height="600"/>
-        <image name="hemePlanewithFe2" width="263" height="107"/>
+        <image name="hemePlanewithFe1" width="270" height="91"/>
+        <image name="homeButton" width="500" height="500"/>
         <image name="large" width="59" height="40"/>
         <image name="leucine" width="592" height="601"/>
         <image name="lowersticks1" width="236" height="261"/>
@@ -2833,7 +2972,7 @@
         <image name="tertiary" width="640" height="480"/>
         <image name="trna1" width="20" height="41"/>
         <image name="trna2" width="20" height="41"/>
-        <image name="uppersticks2" width="281" height="175"/>
+        <image name="uppersticks1" width="340" height="191"/>
         <image name="valine" width="592" height="601"/>
         <image name="zinc" width="1420" height="1060"/>
         <image name="zoomTrna" width="80" height="106"/>
