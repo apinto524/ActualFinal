@@ -30,7 +30,7 @@ class TranslationVC: UIViewController{
     @IBOutlet weak var smallSub: UIImageView!
     @IBOutlet weak var viewanimation: UIButton!
     @IBOutlet weak var textField: UITextView!
-    @IBOutlet weak var quizContainer: UIView!
+    
    
     @IBOutlet weak var peptide: UIImageView!
 
@@ -43,8 +43,7 @@ class TranslationVC: UIViewController{
         super.viewDidLoad()
          hideEverything()
         peptideSize = self.peptide.frame.size
-        quizContainer.hidden = true
-         self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
+        self.view.backgroundColor = UIColor(patternImage: UIImage( imageLiteral: "background"))
         
   
     }
@@ -330,20 +329,8 @@ class TranslationVC: UIViewController{
 
         continuebutton.hidden = false
         
-        //self.showQuiz()
        
     }
 
-    func showQuiz(){
-        self.hideEverything()
-        self.textField.hidden = true
-        self.viewanimation.hidden = true
-        self.continuebutton.hidden = true
 
-        UIView.transitionWithView(self.quizContainer, duration: 1.0, options: [.CurveEaseInOut, .TransitionCurlDown], animations: {
-           self.quizContainer.hidden = false
-
-
-            }, completion: nil)
-    }
 }
